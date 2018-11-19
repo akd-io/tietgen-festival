@@ -1,0 +1,25 @@
+{
+  "name": "tietgen-festival",
+  "description": "Website of Tietgen Festival",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akd-io/tietgen-festival.git"
+  },
+  "author": "Anders Kjær Damgaard",
+  "bugs": {
+    "url": "https://github.com/akd-io/tietgen-festival/issues"
+  },
+  "homepage": "https://github.com/akd-io/tietgen-festival#readme",
+  "dependencies": {
+    "next": "^7.0.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  }
+}
