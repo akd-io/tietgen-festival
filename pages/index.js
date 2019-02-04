@@ -41,6 +41,7 @@ export default class Index extends Component {
           h5,
           h6 {
             font-family: "TypoPRO Bebas Neue", sans-serif;
+            user-select: none;
           }
         `}</style>
       </Fragment>
