@@ -10,6 +10,10 @@ export default class Modal extends Component {
     e.stopPropagation();
   };
 
+  handleOnClickClose = () => {
+    this.props.setModalVisible(false);
+  };
+
   render() {
     const data = this.props.modalData;
     console.log(data);
@@ -39,19 +43,24 @@ export default class Modal extends Component {
       <Fragment>
         <div className="modal-background" onClick={this.handleModalBackgroundOnClick}>
           <div className="modal" onClick={this.handleModalOnClick}>
-            <div className="content">
-              {contents}
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rhoncus sem et sapien
-                maximus pulvinar. Duis condimentum lacinia sem ut elementum. Sed et augue vulputate,
-                lacinia mauris vitae, vestibulum eros. Aenean tincidunt ac ipsum et finibus.
-                Suspendisse et volutpat ante, nec imperdiet nulla. Mauris tincidunt tempor arcu
-                vitae pellentesque. Proin suscipit, mauris vitae posuere fermentum, massa tellus
-                malesuada dui, nec porta sapien purus posuere elit. Praesent dictum turpis vel felis
-                blandit vulputate. Donec hendrerit, sem ut eleifend ultricies, felis augue elementum
-                libero, non accumsan diam lorem bibendum odio. Phasellus a dui aliquet, vestibulum
-                mi quis, dictum orci. Nulla facilisi. Suspendisse potenti.
-              </p>
+            <a className="close-button" onClick={this.handleOnClickClose}>
+              CLOSE
+            </a>
+            <div className="scroll-view">
+              <div className="content">
+                {contents}
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rhoncus sem et
+                  sapien maximus pulvinar. Duis condimentum lacinia sem ut elementum. Sed et augue
+                  vulputate, lacinia mauris vitae, vestibulum eros. Aenean tincidunt ac ipsum et
+                  finibus. Suspendisse et volutpat ante, nec imperdiet nulla. Mauris tincidunt
+                  tempor arcu vitae pellentesque. Proin suscipit, mauris vitae posuere fermentum,
+                  massa tellus malesuada dui, nec porta sapien purus posuere elit. Praesent dictum
+                  turpis vel felis blandit vulputate. Donec hendrerit, sem ut eleifend ultricies,
+                  felis augue elementum libero, non accumsan diam lorem bibendum odio. Phasellus a
+                  dui aliquet, vestibulum mi quis, dictum orci. Nulla facilisi. Suspendisse potenti.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -82,10 +91,26 @@ export default class Modal extends Component {
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 30px;
             box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
             background-color: ${colors.lightblue};
             color: ${colors.pink};
+          }
+          .close-button {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            font-family: "TypoPRO Bebas Neue", sans-serif;
+            font-size: 1.5em;
+            user-select: none;
+            cursor: pointer;
+          }
+          .scroll-view {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin: 30px;
+            overflow-y: auto;
           }
           .content {
             display: flex;
