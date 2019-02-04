@@ -1,14 +1,20 @@
 import { Fragment, Component } from "react";
 import { BannerSection } from "../components/sections/BannerSection";
-import { ArtistsSection } from "../components/sections/ArtistsSection/ArtistsSection";
+import ArtistsSection from "../components/sections/ArtistsSection/ArtistsSection";
 import { ActivitiesSection } from "../components/sections/ActivitiesSection/ActivitiesSection";
 import { AboutSection } from "../components/sections/AboutSection";
-import { Modal } from "../components/Modal";
+import Modal from "../components/Modal";
 import Menu from "../components/Menu";
 
 export default class Index extends Component {
   state = {
     modalProps: null
+  };
+
+  setModalProps = modalProps => {
+    console.log("new;");
+    console.log(modalProps);
+    this.setState({ modalProps });
   };
 
   render() {
@@ -17,12 +23,12 @@ export default class Index extends Component {
         <Menu />
 
         <BannerSection />
-        <ArtistsSection />
+        <ArtistsSection setModalProps={this.setModalProps} />
         <ActivitiesSection />
         <AboutSection />
         {/* TODO: Add DownloadSection */}
 
-        {this.state.modal ? <Modal {...this.state.modalProps} /> : null}
+        {this.state.modalProps ? <Modal {...this.state.modalProps} /> : null}
 
         <style jsx global>{`
           /* TypoPRO Bebas Neue Regular */
