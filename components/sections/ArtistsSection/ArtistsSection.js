@@ -60,7 +60,7 @@ export const ArtistsSection = () => {
 
   return (
     <Fragment>
-      <Section color={colors.green} backgroundColor={colors.yellow}>
+      <Section id="artists-section" color={colors.green} backgroundColor={colors.yellow}>
         <SectionTitle>ARTISTS</SectionTitle>
         <div>
           {artists.map((artist, index) => (

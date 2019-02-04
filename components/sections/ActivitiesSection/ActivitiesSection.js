@@ -43,7 +43,7 @@ export const ActivitiesSection = () => {
   ];
 
   return (
-    <Section color={colors.pink} backgroundColor={colors.lightblue}>
+    <Section id="activities-section" color={colors.pink} backgroundColor={colors.lightblue}>
       <SectionTitle>ACTIVITIES</SectionTitle>
       {activities.map((activity, index) => (
         <Activity activity={activity} key={activity.name} />

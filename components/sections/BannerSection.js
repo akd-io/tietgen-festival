@@ -4,7 +4,12 @@ import colors from "../colors";
 
 export const BannerSection = () => (
   <Fragment>
-    <Section backgroundImage={"/static/image.png"} fullHeight color={colors.yellow}>
+    <Section
+      id="banner-section"
+      backgroundImage={"/static/image.png"}
+      fullHeight
+      color={colors.yellow}
+    >
       <h1 className="bannerTitle">TIETGEN FESTIVAL</h1>
       <h2 className="bannerSubTitle">May 5th 2019</h2>
     </Section>

@@ -1,5 +1,5 @@
 export const Section = props => (
-  <div className="section">
+  <div id={props.id} className="section">
     {props.children}
     <style jsx>{`
       .section {

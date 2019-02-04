@@ -3,7 +3,7 @@ import { SectionTitle } from "./SectionTitle";
 import colors from "../colors";
 
 export const AboutSection = () => (
-  <Section color={colors.black} backgroundColor={colors.lightpink}>
+  <Section id="about-section" color={colors.black} backgroundColor={colors.lightpink}>
     <SectionTitle>About Tietgen</SectionTitle>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rhoncus sem et sapien maximus
