@@ -7,7 +7,7 @@ export const BannerSection = () => (
     <Section
       id="banner-section"
       backgroundImage={"/static/image.png"}
-      fullHeight
+      height="calc(100vh - 80px)"
       color={colors.yellow}
     >
       <h1 className="bannerTitle">TIETGEN FESTIVAL</h1>

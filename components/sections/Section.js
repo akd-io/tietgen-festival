@@ -3,7 +3,7 @@ export const Section = props => (
     {props.children}
     <style jsx>{`
       .section {
-        ${"fullHeight" in props ? "height: 100vh;" : ""}
+        ${"height" in props ? `height: ${props.height};` : ""}
         ${"color" in props ? `color: ${props.color};` : ""}
         ${"backgroundColor" in props ? `background-color: ${props.backgroundColor};` : ""}
         ${"backgroundImage" in props ? `background-image: url(${props.backgroundImage});` : ""}
