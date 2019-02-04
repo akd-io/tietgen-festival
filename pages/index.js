@@ -4,6 +4,7 @@ import { ArtistsSection } from "../components/sections/ArtistsSection/ArtistsSec
 import { ActivitiesSection } from "../components/sections/ActivitiesSection/ActivitiesSection";
 import { AboutSection } from "../components/sections/AboutSection";
 import Menu from "../components/Menu";
+
 export default () => (
   <Fragment>
     <Menu />
