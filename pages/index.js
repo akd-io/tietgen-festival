@@ -29,6 +29,7 @@ export default () => (
       h5,
       h6 {
         font-family: "TypoPRO Bebas Neue", sans-serif;
+        user-select: none;
       }
     `}</style>
   </Fragment>
