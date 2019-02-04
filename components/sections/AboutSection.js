@@ -28,7 +28,7 @@ export const AboutSection = () => (
     </p>
     <style jsx>{`
       p {
-        font-size: calc(1em + 0.5vw);
+        font-size: calc(1em + 0.2vw);
         width: 100%;
         max-width: 700px;
         text-align: center;
