@@ -2,26 +2,28 @@ import { Fragment } from "react";
 
 export const Artist = props => (
   <Fragment>
-    <div>
-      <h2>{props.artist.name}</h2>
-    </div>
+    <a>{props.artist.name}</a>
     <style jsx>{`
-      div {
+      a {
         background-color: ${props.backgroundColor};
       }
     `}</style>
     <style jsx>{`
-      h2 {
-        margin: 0;
-        padding: 0;
+      a {
+        display: inline-block;
+        padding: 1rem;
+        margin: 0.5rem;
+        font-family: "TypoPRO Bebas Neue", sans-serif;
         text-align: center;
         font-size: 1.5em;
         line-height: 0.6em;
+        transition: transform 0.1s ease;
+        transform: scale(0.9);
+        user-select: none;
+        cursor: pointer;
       }
-      div {
-        display: inline-block;
-        padding: 1em;
-        margin: 0.5em;
+      a:hover {
+        transform: scale(1);
       }
     `}</style>
   </Fragment>
