@@ -74,7 +74,7 @@ export const ArtistsSection = () => {
           flex-direction: row;
           flex-wrap: wrap;
           justify-content: center;
-          width: calc(100%);
+          width: 100%;
           max-width: 700px;
         }
       `}</style>
