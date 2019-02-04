@@ -67,6 +67,7 @@ export default () => {
           box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
           font-family: "TypoPRO Bebas Neue", sans-serif;
           user-select: none;
+          z-index: 100;
         }
         .menu-logo {
           font-size: 1.5em;
