@@ -4,6 +4,7 @@ export const SectionTitle = props => (
     <style jsx>{`
       h1 {
         font-size: calc(2em + 1vw);
+        text-transform: uppercase;
       }
     `}</style>
   </h1>
