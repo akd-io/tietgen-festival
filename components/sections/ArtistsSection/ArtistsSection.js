@@ -66,7 +66,7 @@ export default class ArtistsSection extends Component {
           <div>
             {this.artists.map(artist => (
               <Artist
-                setModalProps={this.props.setModalProps}
+                setModalData={this.props.setModalData}
                 artist={artist}
                 backgroundColor={colors.pink}
                 key={artist.name}

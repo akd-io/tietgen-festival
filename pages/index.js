@@ -8,13 +8,19 @@ import Menu from "../components/Menu";
 
 export default class Index extends Component {
   state = {
-    modalProps: null
+    modalData: null,
+    modalVisible: false
   };
 
-  setModalProps = modalProps => {
-    console.log("new;");
-    console.log(modalProps);
-    this.setState({ modalProps });
+  setModalData = modalData => {
+    this.setState({
+      modalData,
+      modalVisible: true
+    });
+  };
+
+  setModalVisible = modalVisible => {
+    this.setState({ modalVisible });
   };
 
   render() {
@@ -23,12 +29,16 @@ export default class Index extends Component {
         <Menu />
 
         <BannerSection />
-        <ArtistsSection setModalProps={this.setModalProps} />
+        <ArtistsSection setModalData={this.setModalData} />
         <ActivitiesSection />
         <AboutSection />
         {/* TODO: Add DownloadSection */}
 
-        {this.state.modalProps ? <Modal {...this.state.modalProps} /> : null}
+        <Modal
+          visible={this.state.modalVisible}
+          setModalVisible={this.setModalVisible}
+          modalData={this.state.modalData}
+        />
 
         <style jsx global>{`
           /* TypoPRO Bebas Neue Regular */

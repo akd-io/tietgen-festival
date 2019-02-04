@@ -2,7 +2,7 @@ import { Fragment, Component } from "react";
 
 export default class Artist extends Component {
   handleOnClick = () => {
-    this.props.setModalProps({
+    this.props.setModalData({
       artist: this.props.artist
     });
   };
