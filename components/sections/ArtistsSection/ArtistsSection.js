@@ -1,11 +1,11 @@
-import { Fragment } from "react";
+import { Fragment, Component } from "react";
 import { Section } from "../Section";
-import { Artist } from "./Artist";
+import Artist from "./Artist";
 import { SectionTitle } from "../SectionTitle";
 import colors from "../../colors";
 
-export const ArtistsSection = () => {
-  const artists = [
+export default class ArtistsSection extends Component {
+  artists = [
     {
       name: "MØ",
       startTime: "13:00",
@@ -58,26 +58,33 @@ export const ArtistsSection = () => {
     }
   ];
 
-  return (
-    <Fragment>
-      <Section id="artists-section" color={colors.green} backgroundColor={colors.yellow}>
-        <SectionTitle>ARTISTS</SectionTitle>
-        <div>
-          {artists.map((artist, index) => (
-            <Artist artist={artist} backgroundColor={colors.pink} key={artist.name} />
-          ))}
-        </div>
-      </Section>
-      <style jsx>{`
-        div {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: center;
-          width: 100%;
-          max-width: 700px;
-        }
-      `}</style>
-    </Fragment>
-  );
-};
+  render() {
+    return (
+      <Fragment>
+        <Section id="artists-section" color={colors.green} backgroundColor={colors.yellow}>
+          <SectionTitle>ARTISTS</SectionTitle>
+          <div>
+            {this.artists.map(artist => (
+              <Artist
+                setModalData={this.props.setModalData}
+                artist={artist}
+                backgroundColor={colors.pink}
+                key={artist.name}
+              />
+            ))}
+          </div>
+        </Section>
+        <style jsx>{`
+          div {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            max-width: 700px;
+          }
+        `}</style>
+      </Fragment>
+    );
+  }
+}
