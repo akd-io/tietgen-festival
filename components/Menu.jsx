@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { Fragment } from "react";
 
 export default () => {
@@ -20,7 +21,8 @@ export default () => {
     const menu = document.getElementById("menu");
     const section = document.getElementById(sectionID);
     const domRect = section.getBoundingClientRect();
-    const newWindowY = window.scrollY + domRect.top - menu.getBoundingClientRect().height;
+    const newWindowY =
+      window.scrollY + domRect.top - menu.getBoundingClientRect().height;
     window.scrollTo({
       top: newWindowY,
       left: 0,
@@ -29,10 +31,20 @@ export default () => {
   };
   return (
     <Fragment>
+      <Head>
+        <script
+          async
+          defer
+          src="https://cdn-ticket.livebackend.com/prod/45/embed/877.js?ver=pmgr1r"
+        />
+      </Head>
       {/* This spacer fills the same space as the menu, but does not have position=fixed, meaning it will push down the page content, so as to not make the menu overlap the top of the banner section. */}
       <div className="spacer" />
       <div id="menu" className="menu">
-        <div className="menu-logo" onClick={() => scrollToSection("banner-section")}>
+        <div
+          className="menu-logo"
+          onClick={() => scrollToSection("banner-section")}
+        >
           TIETGEN FESTIVAL
         </div>
         <div className="menu-link-container">
@@ -45,6 +57,12 @@ export default () => {
               {link.text}
             </a>
           ))}
+          <a
+            className="menu-link"
+            href="https://ticket.livebackend.com/tietgen-festival/e/tf-2019-jon-test/"
+          >
+            TICKET
+          </a>
         </div>
       </div>
       <style jsx>{`
@@ -84,9 +102,11 @@ export default () => {
           cursor: pointer;
           text-transform: uppercase;
           font-size: 1.5em;
+          color: black;
           padding-left: 1em;
           padding-right: 1em;
           text-align: center;
+          text-decoration: none;
         }
       `}</style>
     </Fragment>
