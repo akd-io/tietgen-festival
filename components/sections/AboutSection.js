@@ -3,35 +3,107 @@ import { SectionTitle } from "./SectionTitle";
 import colors from "../colors";
 
 export const AboutSection = () => (
-  <Section id="about-section" color={colors.black} backgroundColor={colors.lightpink}>
-    <SectionTitle>About Tietgen</SectionTitle>
+  <Section
+    id="about-section"
+    minHeight="100vh"
+    color={colors.black}
+    backgroundColor={colors.lightpink}
+  >
+    <SectionTitle>Tickets this year</SectionTitle>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rhoncus sem et sapien maximus
-      pulvinar. Duis condimentum lacinia sem ut elementum. Sed et augue vulputate, lacinia mauris
-      vitae, vestibulum eros. Aenean tincidunt ac ipsum et finibus. Suspendisse et volutpat ante,
-      nec imperdiet nulla. Mauris tincidunt tempor arcu vitae pellentesque. Proin suscipit, mauris
-      vitae posuere fermentum, massa tellus malesuada dui, nec porta sapien purus posuere elit.
-      Praesent dictum turpis vel felis blandit vulputate. Donec hendrerit, sem ut eleifend
-      ultricies, felis augue elementum libero, non accumsan diam lorem bibendum odio. Phasellus a
-      dui aliquet, vestibulum mi quis, dictum orci. Nulla facilisi. Suspendisse potenti.
+      Tietgen Festival is returning yet again this year! Mark the dates in your
+      calendar. It is going to be a blast. Stay tuned on this site for more
+      updates to come. The ticket system will work a bit different this year.
+    </p>
+    <h2>Tickets for residents</h2>
+    <p>
+      All residents of Tietgenkollegiet can buy their own festival ticket at a
+      special price, before the official ticket sale begins.
     </p>
     <p>
-      Nam maximus nisl id pretium aliquet. Nulla imperdiet sapien nisi, sed dapibus quam sagittis a.
-      Curabitur ac enim quam. Ut condimentum ipsum et mauris rhoncus, ac bibendum tellus rutrum. Sed
-      ac gravida nulla, sed eleifend dui. Sed erat lorem, varius ut placerat a, luctus scelerisque
-      lacus. Praesent varius posuere eros. Etiam non justo magna. Aenean sem nisi, dignissim quis
-      neque id, gravida facilisis turpis. Fusce varius luctus dolor, in lobortis lorem ultricies
-      nec. Sed imperdiet magna eget massa porttitor ultrices. Curabitur non dolor sit amet diam
-      lobortis feugiat. Cras sollicitudin purus nisi, vitae laoreet purus fermentum nec. Vestibulum
-      a pellentesque sapien. In a ante turpis. Pellentesque mauris erat, molestie in ipsum vel,
-      placerat porttitor odio.
+      Ticket sales for residents happen between February 14th at 20:00 and
+      February 28th at 23:59. After this deadline, tickets can be purchased at
+      normal price during the general ticket sale. Resident prices are 100 DKK
+      for a one-day ticket, and 150 DKK for a two-day ticket.
     </p>
+    <p>
+      Buy your resident ticket by sending 100 DKK/150 DKK by MobilePay to 67786,
+      and write your room number as the message for the transfer.
+    </p>
+    <p>Your ticket will arrive in your physical mailbox.</p>
+    <h2>Tickets for friends and neighbors</h2>
+    <p>
+      All friends of residents and neighbors of the Tietgen Residence Hall can
+      purchase tickets for Tietgen Festival through the residents of the dorm,
+      who will all receive a login for the general ticket sale in their
+      mailboxes.
+    </p>
+    <p>
+      The general ticket sale takes place between March 1st at 10:00 and April
+      1st at 23:59. Prices are 145 DKK for one-day tickets, and 195 DKK for
+      two-day tickets.
+    </p>
+    <p>
+      Tickets are purchased with the login all residents have received in their
+      mailbox. All residents can buy up to 10 tickets for their friends.
+      However, be aware that tickets can get sold out, and residents are
+      therefore not guaranteed 10 tickets.
+    </p>
+    <p>
+      Ask your friend at the Tietgen Residence Hall to buy a ticket for you, or
+      ask them for their login so you can do it yourself.
+    </p>
+    <p>Tickets are delivered to the email listed when you buy the tickets.</p>
+    <p>
+      <span>Neighbors can contact </span>
+      <a className="link" href="mailto:billet@tietgenfestival.dk">
+        billet@tietgenfestival.dk
+      </a>
+      <span> with their name and address for access to the ticket sale.</span>
+    </p>
+    <h2>Tickets coming soon!</h2>
+    <div className="logo-container">
+      <a href="https://www.facebook.com/TietgenFestival/">
+        <i className="fa fa-facebook-square" />
+      </a>
+      <a href="https://www.instagram.com/Tietgen_Festival/">
+        <i className="fa fa-instagram" />
+      </a>
+    </div>
     <style jsx>{`
       p {
-        font-size: calc(1em + 0.2vw);
+        margin-top: 0em;
+        margin-bottom: 1em;
+        font-size: calc(1em + 0.3vw);
         width: 100%;
         max-width: 700px;
         text-align: center;
+      }
+      h2 {
+        font-size: calc(1.4em + 1.4vw);
+        margin-top: 2.5em;
+        margin-bottom: 1em;
+      }
+      .logo-container {
+        display: flex;
+        flex-direction: row;
+        margin-top: 2.5rem;
+      }
+      .link,
+      .link:link,
+      .link:hover,
+      .link:active {
+        color: blacK;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .fa,
+      .fa:link,
+      .fa:hover,
+      .fa:active {
+        font-size: 3rem;
+        margin: 0.3rem;
+        color: black;
       }
     `}</style>
   </Section>
