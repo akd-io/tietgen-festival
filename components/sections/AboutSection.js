@@ -11,9 +11,12 @@ export const AboutSection = () => (
   >
     <SectionTitle>Tickets this year</SectionTitle>
     <p>
-      Tietgen Festival is returning yet again this year! Mark the dates in your
-      calendar. It is going to be a blast. Stay tuned on this site for more
-      updates to come. The ticket system will work a bit different this year.
+      Tietgen Festival is returning on the 3rd and 4th of May this year! Mark
+      the dates in your calendar - It is going to be a blast.
+    </p>
+    <p>
+      Stay tuned on this website for more updates about the festival, and see
+      below for ticket information.
     </p>
     <h2>Tickets for residents</h2>
     <p>
@@ -21,14 +24,17 @@ export const AboutSection = () => (
       special price, before the official ticket sale begins.
     </p>
     <p>
-      Ticket sales for residents happen between February 14th at 20:00 and
+      The ticket sale for residents happens between February 14th at 20:00 and
       February 28th at 23:59. After this deadline, tickets can be purchased at
       normal price during the general ticket sale. Resident prices are 100 DKK
-      for a one-day ticket, and 150 DKK for a two-day ticket.
+      for a one-day ticket, and 150 DKK for a two-day ticket, however you are
+      more than welcome to pay the regular prices of 145 DKK/195 DKK if you want
+      to support the festival.
     </p>
     <p>
-      Buy your resident ticket by sending 100 DKK/150 DKK by MobilePay to 67786,
-      and write your room number as the message for the transfer.
+      Buy your resident ticket by sending the above amount by MobilePay
+      (MobilePay number available on the Tietgen Facebook Group), and write your
+      room number as the message for the transfer.
     </p>
     <p>Your ticket will arrive in your physical mailbox.</p>
     <h2>Tickets for friends and neighbors</h2>
