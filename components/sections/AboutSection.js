@@ -9,6 +9,16 @@ export const AboutSection = () => (
     color={colors.black}
     backgroundColor={colors.lightpink}
   >
+    <a
+      className="ticket-button"
+      href="https://ticket.livebackend.com/tietgen-festival/api/heyticket/v1/member"
+    >
+      Buy tickets
+    </a>
+    <br />
+    <br />
+    <br />
+    <br />
     <SectionTitle>Tickets this year</SectionTitle>
     <p>
       Tietgen Festival is returning on the 3rd and 4th of May this year! Mark
@@ -67,7 +77,19 @@ export const AboutSection = () => (
       </a>
       <span> with their name and address for access to the ticket sale.</span>
     </p>
-    <h2>Tickets coming soon!</h2>
+    <br />
+    <br />
+    <br />
+    <br />
+    <a
+      className="ticket-button"
+      href="https://ticket.livebackend.com/tietgen-festival/api/heyticket/v1/member"
+    >
+      Buy tickets
+    </a>
+    <br />
+    <br />
+    <br />
     <div className="logo-container">
       <a href="https://www.facebook.com/TietgenFestival/">
         <i className="fa fa-facebook-square" />
@@ -77,6 +99,22 @@ export const AboutSection = () => (
       </a>
     </div>
     <style jsx>{`
+      .ticket-button {
+        padding: 1em;
+        padding-top: 0.9em;
+        padding-bottom: 0.7em;
+        font-family: "TypoPRO Bebas Neue", "Roboto", sans-serif;
+        font-size: 2em;
+        color: ${colors.yellow};
+        background-color: ${colors.pink};
+        border: none;
+        border-radius: 0.5em;
+      }
+      .ticket-button:link,
+      .ticket-button:hover,
+      .ticket-button:active {
+        text-decoration: none;
+      }
       p {
         margin-top: 0em;
         margin-bottom: 1em;

@@ -21,6 +21,11 @@ export default class Index extends Component {
             type="text/css"
             href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
           />
+          <script
+            async
+            defer
+            src="https://cdn-ticket.livebackend.com/prod/45/embed/877.js?ver=pmgr1r"
+          />
         </Head>
         <BannerSection />
         <AboutSection />
