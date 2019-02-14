@@ -7,7 +7,6 @@ export class BannerSection extends Component {
     this.scrollToSection("about-section");
   };
   scrollToSection = sectionID => {
-    console.log(sectionID);
     const section = document.getElementById(sectionID);
     const domRect = section.getBoundingClientRect();
     const newWindowY = window.scrollY + domRect.top;
@@ -21,17 +20,17 @@ export class BannerSection extends Component {
     return (
       <Fragment>
         <Section id="banner-section" height="calc(100vh)" color={colors.yellow}>
-          <video autoPlay loop muted>
+          <video autoPlay loop muted poster="/static/video_poster.jpg">
             <source src="/static/video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           <div className="container">
             <img src="static/logo.png" />
-            <div className="subtitles">
-              <h2 className="bannerSubTitle">
+            <div className="title-container">
+              <h2 className="title">
                 3<sup>RD</sup> - 4<sup>TH</sup> MAY 2019
               </h2>
-              <h2 className="bannerSubTitle">Tietgenkollegiet</h2>
+              <h2 className="title">Tietgenkollegiet</h2>
             </div>
           </div>
           <a onClick={this.handleArrowDownOnClick}>
@@ -42,7 +41,7 @@ export class BannerSection extends Component {
           video {
             position: absolute;
             width: 100%;
-            height: calc(100vh);
+            height: 100vh;
             z-index: -1;
             object-fit: cover;
           }
@@ -52,27 +51,37 @@ export class BannerSection extends Component {
             align-items: center;
           }
           img {
-            width: 25em;
-            margin-right: 2.5em;
+            width: 35vw;
+            margin-right: 2vw;
             border-radius: 100%;
           }
-          .subtitles {
+          .title-container {
             display: flex;
             flex-direction: column;
           }
-          .bannerSubTitle {
+          .title {
             margin: 0;
-            font-size: calc(25px + 3vw);
             text-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+            font-size: 8.5vw;
           }
           sup {
             font-size: 0.5em;
           }
           .fa-arrow-down {
             position: absolute;
+            left: calc(50vw - 2rem);
             bottom: 40px;
             font-size: 4rem;
             cursor: pointer;
+          }
+          @media screen and (min-width: 800px) {
+            img {
+              width: calc(0.35 * 800px);
+              margin-right: calc(0.02 * 800px);
+            }
+            .title {
+              font-size: calc(0.085 * 800px);
+            }
           }
         `}</style>
       </Fragment>
