@@ -1,5 +1,5 @@
 {
-  "alias": "tietgenfestival.dk",
+  "alias": ["tietgenfestival.dk", "www.tietgenfestival.dk"],
   "version": 2,
   "builds": [{ "src": "next.config.js", "use": "@now/next" }]
 }
