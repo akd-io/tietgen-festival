@@ -28,6 +28,13 @@ export const AboutSection = () => (
       Stay tuned on this website for more updates about the festival, and see
       below for ticket information.
     </p>
+    <p>
+      Contact{" "}
+      <a className="link" href="mailto:billet@tietgenfestival.dk">
+        billet@tietgenfestival.dk
+      </a>{" "}
+      for questions about tickets
+    </p>
     <h2>Tickets for residents</h2>
     <p>
       All residents of Tietgenkollegiet can buy their own festival ticket at a
@@ -71,11 +78,11 @@ export const AboutSection = () => (
     </p>
     <p>Tickets are delivered to the email listed when you buy the tickets.</p>
     <p>
-      <span>Neighbors can contact </span>
+      Neighbors can contact{" "}
       <a className="link" href="mailto:billet@tietgenfestival.dk">
         billet@tietgenfestival.dk
-      </a>
-      <span> with their name and address for access to the ticket sale.</span>
+      </a>{" "}
+      with their name and address for access to the ticket sale.
     </p>
     <br />
     <br />
