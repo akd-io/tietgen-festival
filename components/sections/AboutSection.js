@@ -33,7 +33,7 @@ export const AboutSection = () => (
       <a className="link" href="mailto:billet@tietgenfestival.dk">
         billet@tietgenfestival.dk
       </a>{" "}
-      for questions about tickets
+      for questions about tickets.
     </p>
     <h2>Tickets for residents</h2>
     <p>
