@@ -12,6 +12,11 @@ export default class Index extends Component {
             name="viewport"
             content="width=device-width, initial-scale=1.0"
           />
+          <meta
+            name="description"
+            content="The official site for the annual festival at the Tietgen Residence hall!"
+          />
+          <title>Tietgen Festival</title>
           <link
             href="https://fonts.googleapis.com/css?family=Roboto:400,700"
             rel="stylesheet"
