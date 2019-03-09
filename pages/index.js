@@ -17,6 +17,7 @@ export default class Index extends Component {
             content="The official site for the annual festival at the Tietgen Residence hall!"
           />
           <title>Tietgen Festival</title>
+          <link rel="icon" href="/static/favicon.png" sizes="32x32" />
           <link
             href="https://fonts.googleapis.com/css?family=Roboto:400,700"
             rel="stylesheet"
