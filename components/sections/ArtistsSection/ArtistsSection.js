@@ -61,7 +61,11 @@ export default class ArtistsSection extends Component {
   render() {
     return (
       <Fragment>
-        <Section id="artists-section" color={colors.green} backgroundColor={colors.yellow}>
+        <Section
+          id="artists-section"
+          color={colors.pink}
+          backgroundColor={colors.yellow}
+        >
           <SectionTitle>ARTISTS</SectionTitle>
           <div>
             {this.artists.map(artist => (
@@ -81,7 +85,7 @@ export default class ArtistsSection extends Component {
             flex-wrap: wrap;
             justify-content: center;
             width: 100%;
-            max-width: 700px;
+            max-width: 1100px;
           }
         `}</style>
       </Fragment>
