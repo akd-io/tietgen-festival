@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "now-build": "next build"
   },
   "repository": {
     "type": "git",
@@ -18,8 +19,8 @@
   },
   "homepage": "https://github.com/akd-io/tietgen-festival#readme",
   "dependencies": {
-    "next": "^7.0.2",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3"
+    "next": "^8.0.3",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
   }
 }
