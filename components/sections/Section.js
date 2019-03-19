@@ -4,9 +4,18 @@ export const Section = props => (
     <style jsx>{`
       .section {
         ${"height" in props ? `height: ${props.height};` : ""}
+        ${"minHeight" in props ? `min-height: ${props.minHeight};` : ""}
         ${"color" in props ? `color: ${props.color};` : ""}
-        ${"backgroundColor" in props ? `background-color: ${props.backgroundColor};` : ""}
-        ${"backgroundImage" in props ? `background-image: url(${props.backgroundImage});` : ""}
+        ${
+          "backgroundColor" in props
+            ? `background-color: ${props.backgroundColor};`
+            : ""
+        }
+        ${
+          "backgroundImage" in props
+            ? `background-image: url(${props.backgroundImage});`
+            : ""
+        }
       }
     `}</style>
     <style jsx>{`
