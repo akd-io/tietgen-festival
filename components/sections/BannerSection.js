@@ -1,10 +1,10 @@
-import { Fragment, Component } from "react";
-import { Section } from "./Section";
-import colors from "../colors";
+import { Fragment, Component } from 'react';
+import { Section } from './Section';
+import colors from '../colors';
 
 export class BannerSection extends Component {
   handleArrowDownOnClick = () => {
-    this.scrollToSection("about-section");
+    this.scrollToSection('about-section');
   };
   scrollToSection = sectionID => {
     const section = document.getElementById(sectionID);
@@ -13,13 +13,17 @@ export class BannerSection extends Component {
     window.scrollTo({
       top: newWindowY,
       left: 0,
-      behavior: "smooth"
+      behavior: 'smooth',
     });
   };
   render() {
     return (
       <Fragment>
-        <Section id="banner-section" height="calc(100vh)" color={colors.yellow}>
+        <Section
+          id="banner-section"
+          height="calc(100vh - 80px)"
+          color={colors.yellow}
+        >
           <video autoPlay loop muted poster="/static/video_poster.jpg">
             <source src="/static/video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
@@ -41,7 +45,7 @@ export class BannerSection extends Component {
           video {
             position: absolute;
             width: 100%;
-            height: 100vh;
+            height: calc(100vh - 80px);
             z-index: -1;
             object-fit: cover;
           }
