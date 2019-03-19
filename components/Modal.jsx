@@ -1,5 +1,5 @@
-import { Fragment, Component } from "react";
-import colors from "./colors";
+import { Fragment, Component } from 'react';
+import colors from './colors';
 
 export default class Modal extends Component {
   handleModalBackgroundOnClick = () => {
@@ -15,59 +15,36 @@ export default class Modal extends Component {
   };
 
   render() {
-    const data = this.props.modalData;
-    console.log(data);
-    var contents;
-    if (data && data.artist) {
-      const artist = data.artist;
-      contents = (
-        <Fragment>
-          <h1>{artist.name}</h1>
-          <h2>
-            {artist.startTime} - {artist.endTime}
-          </h2>
-        </Fragment>
-      );
-    } else if (data && data.activity) {
-      const activity = data.activity;
-      contents = (
-        <Fragment>
-          <h1>{activity.name}</h1>
-          <h2>
-            {activity.startTime} - {activity.endTime}
-          </h2>
-        </Fragment>
-      );
-    }
+    const { title, imageUrl, content } = this.props.modalData
+      ? this.props.modalData
+      : {
+          title: '',
+          imageUrl: '',
+          content: <Fragment />,
+        };
+
     return (
       <Fragment>
-        <div className="modal-background" onClick={this.handleModalBackgroundOnClick}>
+        <div
+          className="modal-background"
+          onClick={this.handleModalBackgroundOnClick}
+        >
           <div className="modal" onClick={this.handleModalOnClick}>
             <a className="close-button" onClick={this.handleOnClickClose}>
               CLOSE
             </a>
             <div className="scroll-view">
               <div className="content">
-                {contents}
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rhoncus sem et
-                  sapien maximus pulvinar. Duis condimentum lacinia sem ut elementum. Sed et augue
-                  vulputate, lacinia mauris vitae, vestibulum eros. Aenean tincidunt ac ipsum et
-                  finibus. Suspendisse et volutpat ante, nec imperdiet nulla. Mauris tincidunt
-                  tempor arcu vitae pellentesque. Proin suscipit, mauris vitae posuere fermentum,
-                  massa tellus malesuada dui, nec porta sapien purus posuere elit. Praesent dictum
-                  turpis vel felis blandit vulputate. Donec hendrerit, sem ut eleifend ultricies,
-                  felis augue elementum libero, non accumsan diam lorem bibendum odio. Phasellus a
-                  dui aliquet, vestibulum mi quis, dictum orci. Nulla facilisi. Suspendisse potenti.
-                </p>
+                <h1>{title}</h1>
+                {content}
               </div>
             </div>
           </div>
         </div>
         <style jsx>{`
           .modal-background {
-            opacity: ${this.props.visible ? "1" : "0"};
-            visibility: ${this.props.visible ? "visible" : "hidden"};
+            opacity: ${this.props.visible ? '1' : '0'};
+            visibility: ${this.props.visible ? 'visible' : 'hidden'};
           }
         `}</style>
         <style jsx>{`
@@ -99,7 +76,7 @@ export default class Modal extends Component {
             position: absolute;
             top: 30px;
             left: 30px;
-            font-family: "TypoPRO Bebas Neue", sans-serif;
+            font-family: 'TypoPRO Bebas Neue', sans-serif;
             font-size: 1.5em;
             user-select: none;
             cursor: pointer;

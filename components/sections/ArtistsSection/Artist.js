@@ -1,10 +1,12 @@
-import { Fragment, Component } from "react";
-import colors from "../../colors";
+import { Fragment, Component } from 'react';
+import colors from '../../colors';
 
 export default class Artist extends Component {
   handleOnClick = () => {
     this.props.setModalData({
-      artist: this.props.artist
+      title: this.props.artist.name,
+      imageUrl: this.props.artist.imageUrl,
+      content: this.props.artist.description,
     });
   };
 
@@ -26,7 +28,7 @@ export default class Artist extends Component {
             padding: 4rem;
             padding-bottom: 1rem;
             padding-top: 0.5rem;
-            font-family: "TypoPRO Bebas Neue", sans-serif;
+            font-family: 'TypoPRO Bebas Neue', sans-serif;
             font-weight: bold;
             font-size: 4em;
             text-align: center;
