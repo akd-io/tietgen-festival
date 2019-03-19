@@ -1,13 +1,10 @@
 import { Fragment, Component } from 'react';
 import Head from 'next/head';
-import { BannerSection } from '../components/sections/BannerSection';
-import { AboutSection } from '../components/sections/AboutSection';
-import { Fragment, Component } from 'react';
+import Menu from '../components/Menu';
 import { BannerSection } from '../components/sections/BannerSection';
 import ArtistsSection from '../components/sections/ArtistsSection/ArtistsSection';
 import { ActivitiesSection } from '../components/sections/ActivitiesSection/ActivitiesSection';
 import { AboutSection } from '../components/sections/AboutSection';
-import Menu from '../components/Menu';
 import Modal from '../components/Modal';
 
 export default class Index extends Component {
