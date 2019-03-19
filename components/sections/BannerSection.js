@@ -4,8 +4,9 @@ import colors from '../colors';
 
 export class BannerSection extends Component {
   handleArrowDownOnClick = () => {
-    this.scrollToSection('about-section');
+    this.scrollToSection('artists-section');
   };
+
   scrollToSection = sectionID => {
     const section = document.getElementById(sectionID);
     const domRect = section.getBoundingClientRect();
@@ -16,6 +17,7 @@ export class BannerSection extends Component {
       behavior: 'smooth',
     });
   };
+
   render() {
     return (
       <Fragment>
