@@ -10,7 +10,7 @@ export class BannerSection extends Component {
   scrollToSection = sectionID => {
     const section = document.getElementById(sectionID);
     const domRect = section.getBoundingClientRect();
-    const newWindowY = window.scrollY + domRect.top;
+    const newWindowY = window.scrollY + domRect.top - 80;
     window.scrollTo({
       top: newWindowY,
       left: 0,
