@@ -27,13 +27,14 @@ export default class Artist extends Component {
             margin-right: 0;
             padding: 4rem;
             padding-bottom: 1rem;
-            padding-top: 0.5rem;
+            padding-top: 0.25rem;
             font-family: 'TypoPRO Bebas Neue', sans-serif;
             font-weight: bold;
             font-size: 4em;
             text-align: center;
             color: ${colors.yellow};
-            line-height: 0.6em;
+            overflow-y: hidden;
+            line-height: 0.8em;
             transition: transform 0.1s ease;
             transform: skew(-20deg) scale(0.9);
             user-select: none;
