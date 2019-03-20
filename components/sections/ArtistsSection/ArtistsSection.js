@@ -126,8 +126,12 @@ export default class ArtistsSection extends Component {
           again how they manage to fire up the festival and start a huge part
           with their creative minds, flawless technique and hilarious word play!
           <br />
-          Look forward to experience: Dr. T, MC Lillebror, Hazzi and last but
-          not least, the reigning danish freestyle rap champion, Den Lette Gade!
+          Look forward to experience:{' '}
+          <a href="https://www.facebook.com/Doctor.T.rap/">Dr. T</a>,{' '}
+          <a href="https://www.facebook.com/mclillebror/">MC Lillebror</a>,{' '}
+          <a href="https://www.facebook.com/HazziOfficial/">Hazzi</a> and last
+          but not least, the reigning danish freestyle rap champion,{' '}
+          <a href="https://www.facebook.com/denlettegade/">Den Lette Gade</a>!
         </div>
       ),
       imageUrl: '/static/artists/RapBattle.jpg',
