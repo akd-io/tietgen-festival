@@ -5,6 +5,7 @@ export const SectionTitle = props => (
       h1 {
         font-size: calc(5em + 1vw);
         text-transform: uppercase;
+        text-align: center;
       }
     `}</style>
   </h1>
