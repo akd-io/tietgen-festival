@@ -68,7 +68,7 @@ export default class ArtistsSection extends Component {
           hard-hitting riffs adorning our beautiful scenery.
         </div>
       ),
-      imageUrl: null,
+      imageUrl: '/static/artists/Siamese.jpg',
     },
     {
       name: 'PERLÉ',
