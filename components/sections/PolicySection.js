@@ -1,6 +1,6 @@
-import { Section } from "./Section";
-import { SectionTitle } from "./SectionTitle";
-import colors from "../colors";
+import { Section } from './Section';
+import { SectionTitle } from './SectionTitle';
+import colors from '../colors';
 
 export const PolicySection = () => (
   <Section
@@ -12,10 +12,13 @@ export const PolicySection = () => (
     <SectionTitle>Privacy Policy</SectionTitle>
     <p>
       <h2>Do we store information about you?</h2>
-      The only information we store is feedback from our Android and iOS apps.
-      <br />
-      All data is stored anonymously, and is not shared with anyone besides the
-      board of Tietgen Festival.
+      No, we only store the your feedback that you send through the about-page
+      on the app. All feedback is stored anonymously. When you send your
+      feedback, a random key is generated, that only your device know. Every
+      time to change your feedback your device use the same key over and over
+      again. Server has no information of who has which key - So your feedback
+      can’t be tracked back to you. The feedback you sent is not shared with
+      anyone besides the board of Tietgen Festival.
     </p>
     <style jsx>{`
       h2 {
