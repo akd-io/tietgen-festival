@@ -1,6 +1,6 @@
-import { Section } from "./Section";
-import { SectionTitle } from "./SectionTitle";
-import colors from "../colors";
+import { Section } from './Section';
+import { SectionTitle } from './SectionTitle';
+import colors from '../colors';
 
 export const AboutSection = () => (
   <Section
@@ -29,10 +29,10 @@ export const AboutSection = () => (
       below for ticket information.
     </p>
     <p>
-      Contact{" "}
+      Contact{' '}
       <a className="link" href="mailto:billet@tietgenfestival.dk">
         billet@tietgenfestival.dk
-      </a>{" "}
+      </a>{' '}
       for questions about tickets.
     </p>
     <h2>Tickets for residents</h2>
@@ -78,10 +78,10 @@ export const AboutSection = () => (
     </p>
     <p>Tickets are delivered to the email listed when you buy the tickets.</p>
     <p>
-      Neighbors can contact{" "}
+      Neighbors can contact{' '}
       <a className="link" href="mailto:billet@tietgenfestival.dk">
         billet@tietgenfestival.dk
-      </a>{" "}
+      </a>{' '}
       with their name and address for access to the ticket sale.
     </p>
     <br />
@@ -105,12 +105,20 @@ export const AboutSection = () => (
         <i className="fa fa-instagram" />
       </a>
     </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <p className="footer-disclaimer">
+      Tietgen Festival is for residents of the dorm, friends of residents and
+      neighbors.
+    </p>
     <style jsx>{`
       .ticket-button {
         padding: 1em;
         padding-top: 0.9em;
         padding-bottom: 0.7em;
-        font-family: "TypoPRO Bebas Neue", "Roboto", sans-serif;
+        font-family: 'TypoPRO Bebas Neue', 'Roboto', sans-serif;
         font-size: 2em;
         color: ${colors.yellow};
         background-color: ${colors.pink};
@@ -155,6 +163,10 @@ export const AboutSection = () => (
         font-size: 3rem;
         margin: 0.3rem;
         color: black;
+      }
+      .footer-disclaimer {
+        opacity: 0.5;
+        font-style: italic;
       }
     `}</style>
   </Section>
