@@ -33,6 +33,7 @@ export default class Modal extends Component {
             <a className="close-button" onClick={this.handleOnClickClose}>
               CLOSE
             </a>
+            <img src={imageUrl} />
             <div className="scroll-view">
               <div className="content">
                 <h1>{title}</h1>
@@ -55,22 +56,31 @@ export default class Modal extends Component {
             bottom: 0;
             left: 0;
             z-index: 200;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
             background-color: rgba(0, 0, 0, 0.5);
             transition: all 0.2s ease;
             transition-property: opacity, visibility;
           }
           .modal {
             position: absolute;
-            top: 40px;
-            right: 40px;
-            bottom: 40px;
-            left: 40px;
+            width: 800px;
+            height: 100%;
+            margin-top: 40px;
+            max-width: calc(100vw - 80px);
+            max-height: calc(100vh - 80px);
             display: flex;
             flex-direction: column;
             align-items: center;
             box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
             background-color: ${colors.lightblue};
             color: ${colors.pink};
+            overflow-y: auto;
+          }
+          img {
+            width: 100%;
           }
           .close-button {
             position: absolute;
@@ -81,18 +91,12 @@ export default class Modal extends Component {
             user-select: none;
             cursor: pointer;
           }
-          .scroll-view {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-            margin: 30px;
-            overflow-y: auto;
-          }
           .content {
             display: flex;
             flex-direction: column;
             align-items: center;
+            padding-top: 2em;
+            padding-bottom: 4em;
             width: 100%;
             max-width: 700px;
           }
