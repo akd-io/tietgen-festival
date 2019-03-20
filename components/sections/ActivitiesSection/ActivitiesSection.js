@@ -9,8 +9,8 @@ export const ActivitiesSection = () => {
     <Fragment>
       <Section
         id="activities-section"
-        color={colors.pink}
-        backgroundColor={colors.lightblue}
+        color={colors.yellow}
+        backgroundColor={colors.pink}
       >
         <SectionTitle>ACTIVITIES</SectionTitle>
         <h2>TO BE ANNOUNCED!</h2>
