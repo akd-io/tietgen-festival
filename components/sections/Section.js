@@ -3,18 +3,18 @@ export const Section = props => (
     {props.children}
     <style jsx>{`
       .section {
-        ${"height" in props ? `height: ${props.height};` : ""}
-        ${"minHeight" in props ? `min-height: ${props.minHeight};` : ""}
-        ${"color" in props ? `color: ${props.color};` : ""}
+        ${'height' in props ? `height: ${props.height};` : ''}
+        ${'minHeight' in props ? `min-height: ${props.minHeight};` : ''}
+        ${'color' in props ? `color: ${props.color};` : ''}
         ${
-          "backgroundColor" in props
+          'backgroundColor' in props && props.backgroundColor
             ? `background-color: ${props.backgroundColor};`
-            : ""
+            : ''
         }
         ${
-          "backgroundImage" in props
+          'backgroundImage' in props && props.backgroundImage
             ? `background-image: url(${props.backgroundImage});`
-            : ""
+            : ''
         }
       }
     `}</style>
