@@ -8,18 +8,14 @@ export const Section = props => (
         ${'color' in props ? `color: ${props.color};` : ''}
         ${
           'backgroundColor' in props && props.backgroundColor
-            ? `background-color: ${props.backgroundColor};`
-            : ''
-        }
-        ${
-          'backgroundImage' in props && props.backgroundImage
-            ? `background-image: url(${props.backgroundImage});`
+            ? `background: ${props.backgroundColor};`
             : ''
         }
       }
     `}</style>
     <style jsx>{`
       .section {
+        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -29,8 +25,6 @@ export const Section = props => (
         padding-left: calc(2em + 2vw);
         padding-right: calc(2em + 2vw);
         box-sizing: border-box;
-        background-position: center;
-        background-size: cover;
       }
     `}</style>
   </div>

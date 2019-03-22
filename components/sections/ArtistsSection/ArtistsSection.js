@@ -1,11 +1,11 @@
-import { Fragment, Component } from 'react';
+import { Fragment, Component, useState, Image } from 'react';
 import { Section } from '../Section';
 import Artist from './Artist';
 import { SectionTitle } from '../SectionTitle';
 import colors from '../../colors';
 
-export default class ArtistsSection extends Component {
-  artists = [
+export default props => {
+  const artists = [
     {
       name: 'BENAL',
       description: (
@@ -137,38 +137,61 @@ export default class ArtistsSection extends Component {
       imageUrl: '/static/artists/RapBattle.jpg',
     },
   ];
+  const [selectedArtist, setSelectedArtist] = useState(null);
 
-  render() {
-    return (
-      <Fragment>
-        <Section
-          id="artists-section"
-          color={colors.pink}
-          backgroundColor={colors.yellow}
-        >
-          <SectionTitle>ARTISTS</SectionTitle>
-          <div>
-            {this.artists.map(artist => (
-              <Artist
-                setModalData={this.props.setModalData}
-                artist={artist}
-                backgroundColor={colors.pink}
-                key={artist.name}
-              />
-            ))}
-          </div>
-        </Section>
-        <style jsx>{`
-          div {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            width: 100%;
-            max-width: 1100px;
-          }
-        `}</style>
-      </Fragment>
-    );
-  }
-}
+  return (
+    <Fragment>
+      <Section
+        id="artists-section"
+        color={colors.pink}
+        backgroundColor={colors.yellow}
+      >
+        {artists.map((artist, artistIndex, artistArray) => (
+          <img
+            className={selectedArtist == artistIndex ? 'visible' : ''}
+            key={artist.imageUrl}
+            src={artist.imageUrl}
+          />
+        ))}
+        <SectionTitle>ARTISTS</SectionTitle>
+        <div>
+          {artists.map((artist, artistIndex, artistArray) => (
+            <Artist
+              key={artist.name}
+              setModalData={props.setModalData}
+              artist={artist}
+              backgroundColor={colors.pink}
+              onMouseOver={() => setSelectedArtist(artistIndex)}
+              onMouseOut={artistIndex =>
+                setSelectedArtist(prevArtistIndex =>
+                  prevArtistIndex == artistIndex ? null : artistIndex
+                )
+              }
+            />
+          ))}
+        </div>
+      </Section>
+      <style jsx>{`
+        div {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          width: 100%;
+          max-width: 1100px;
+        }
+        img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          transition: opacity 0.1s ease;
+          opacity: 0;
+          object-fit: cover;
+        }
+        .visible {
+          opacity: 1;
+        }
+      `}</style>
+    </Fragment>
+  );
+};

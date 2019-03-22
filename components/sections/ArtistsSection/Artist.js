@@ -13,7 +13,13 @@ export default class Artist extends Component {
   render() {
     return (
       <Fragment>
-        <a onClick={this.handleOnClick}>{this.props.artist.name}</a>
+        <a
+          onClick={this.handleOnClick}
+          onMouseOver={() => this.props.onMouseOver()}
+          onMouseOut={() => this.props.onMouseOut()}
+        >
+          {this.props.artist.name}
+        </a>
         <style jsx>{`
           a {
             background-color: ${this.props.backgroundColor};
