@@ -31,13 +31,6 @@ export default () => {
   };
   return (
     <Fragment>
-      <Head>
-        <script
-          async
-          defer
-          src="https://cdn-ticket.livebackend.com/prod/45/embed/877.js?ver=pmgr1r"
-        />
-      </Head>
       {/* This spacer fills the same space as the menu, but does not have position=fixed, meaning it will push down the page content, so as to not make the menu overlap the top of the banner section. */}
       <div className="spacer" />
       <div id="menu" className="menu">
@@ -53,7 +46,7 @@ export default () => {
               {link.text}
             </a>
           ))}
-          <a href="https://ticket.livebackend.com/tietgen-festival/e/tf-2019-jon-test/">
+          <a href="https://ticket.livebackend.com/tietgen-festival/api/heyticket/v1/member">
             TICKET
           </a>
         </div>
