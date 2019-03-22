@@ -71,7 +71,7 @@ export default props => {
       imageUrl: '/static/artists/Siamese.jpg',
     },
     {
-      name: 'PERLÉ',
+      name: 'PARLÉ',
       description: (
         <div>
           With soul, pop, disco and everything in between, PARLÉ sets the stage
@@ -85,7 +85,7 @@ export default props => {
           weekend with lots of music and party!
         </div>
       ),
-      imageUrl: '/static/artists/parle.jpg',
+      imageUrl: '/static/artists/Parle.jpg',
     },
     {
       name: 'COLD CAN FACTORY',
