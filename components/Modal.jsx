@@ -81,6 +81,8 @@ export default class Modal extends Component {
           }
           img {
             width: 100%;
+            max-height: 50%;
+            object-fit: cover;
           }
           .close-button {
             position: absolute;
