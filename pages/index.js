@@ -65,7 +65,11 @@ export default class Index extends Component {
           setModalVisible={this.setModalVisible}
           modalData={this.state.modalData}
         />
-
+        <style jsx global>{`
+          body {
+            overflow: ${this.state.modalVisible ? 'hidden' : 'visible'};
+          }
+        `}</style>
         <style jsx global>{`
           /* TypoPRO Bebas Neue Regular */
           @import url('https://cdn.jsdelivr.net/npm/@typopro/web-bebas-neue@3.7.5/TypoPRO-BebasNeue-Regular.css');
