@@ -135,6 +135,7 @@ export const AboutSection = () => (
         font-size: calc(1.4em + 1.4vw);
         margin-top: 2.5em;
         margin-bottom: 1em;
+        text-align: center;
       }
       .logo-container {
         display: flex;
