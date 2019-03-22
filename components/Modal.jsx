@@ -33,8 +33,8 @@ export default class Modal extends Component {
             <a className="close-button" onClick={this.handleOnClickClose}>
               CLOSE
             </a>
-            <img src={imageUrl} />
             <div className="scroll-view">
+              <img src={imageUrl} />
               <div className="content">
                 <h1>{title}</h1>
                 {content}
@@ -77,6 +77,8 @@ export default class Modal extends Component {
             box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
             background-color: ${colors.lightblue};
             color: ${colors.pink};
+          }
+          .scroll-view {
             overflow-y: auto;
           }
           img {
@@ -86,12 +88,12 @@ export default class Modal extends Component {
           }
           .close-button {
             position: absolute;
-            top: 30px;
-            left: 30px;
+            top: 10px;
+            left: 10px;
             padding: 5px;
             padding-bottom: 0px;
             font-family: 'TypoPRO Bebas Neue', sans-serif;
-            font-size: 1.5em;
+            font-size: 2em;
             user-select: none;
             cursor: pointer;
             background-color: ${colors.yellow};
@@ -100,8 +102,8 @@ export default class Modal extends Component {
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding-top: 2em;
-            padding-bottom: 4em;
+            box-sizing: border-box;
+            padding: 2em;
             width: 100%;
             max-width: 700px;
           }
