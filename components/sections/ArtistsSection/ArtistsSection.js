@@ -173,7 +173,7 @@ export default props => {
           {artists.map((artist, artistIndex, artistArray) => (
             <Artist
               key={artist.name}
-              setModalData={props.setModalData}
+              updateModalData={props.updateModalData}
               artist={artist}
               backgroundColor={colors.pink}
               onMouseOver={() => setSelectedArtist(artistIndex)}

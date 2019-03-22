@@ -3,7 +3,7 @@ import colors from '../../colors';
 
 export default class Artist extends Component {
   handleOnClick = () => {
-    this.props.setModalData({
+    this.props.updateModalData({
       title: this.props.artist.name,
       imageUrl: this.props.artist.imageUrl,
       content: this.props.artist.description,
