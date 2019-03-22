@@ -1,24 +1,24 @@
-import Head from "next/head";
-import { Fragment } from "react";
+import Head from 'next/head';
+import { Fragment } from 'react';
 
 export default () => {
   const links = [
     {
-      text: "artists",
-      sectionID: "artists-section"
+      text: 'artists',
+      sectionID: 'artists-section',
     },
     {
-      text: "activities",
-      sectionID: "activities-section"
+      text: 'activities',
+      sectionID: 'activities-section',
     },
     {
-      text: "about",
-      sectionID: "about-section"
-    }
+      text: 'about',
+      sectionID: 'about-section',
+    },
   ];
   const scrollToSection = sectionID => {
     console.log(sectionID);
-    const menu = document.getElementById("menu");
+    const menu = document.getElementById('menu');
     const section = document.getElementById(sectionID);
     const domRect = section.getBoundingClientRect();
     const newWindowY =
@@ -26,7 +26,7 @@ export default () => {
     window.scrollTo({
       top: newWindowY,
       left: 0,
-      behavior: "smooth"
+      behavior: 'smooth',
     });
   };
   return (
@@ -43,7 +43,7 @@ export default () => {
       <div id="menu" className="menu">
         <div
           className="menu-logo"
-          onClick={() => scrollToSection("banner-section")}
+          onClick={() => scrollToSection('banner-section')}
         >
           TIETGEN FESTIVAL
         </div>
@@ -59,7 +59,7 @@ export default () => {
           ))}
           <a
             className="menu-link"
-            href="https://ticket.livebackend.com/tietgen-festival/e/tf-2019-jon-test/"
+            href="https://ticket.livebackend.com/tietgen-festival/api/heyticket/v1/member"
           >
             TICKET
           </a>
@@ -83,7 +83,7 @@ export default () => {
           justify-content: space-between;
           align-items: center;
           box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
-          font-family: "TypoPRO Bebas Neue", sans-serif;
+          font-family: 'TypoPRO Bebas Neue', sans-serif;
           user-select: none;
           z-index: 100;
         }
