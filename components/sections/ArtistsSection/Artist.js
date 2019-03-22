@@ -26,7 +26,9 @@ export default class Artist extends Component {
           }
         `}</style>
         <style jsx>{`
-          a {
+          a,
+          a:link,
+          a:visited {
             display: inline-block;
             margin: 0.5rem;
             margin-left: 0;
@@ -35,7 +37,6 @@ export default class Artist extends Component {
             padding-bottom: 1rem;
             padding-top: 0.25rem;
             overflow-y: hidden;
-            color: ${colors.yellow};
             font-family: 'TypoPRO Bebas Neue', sans-serif;
             font-weight: bold;
             font-size: 4rem;
@@ -47,7 +48,8 @@ export default class Artist extends Component {
             user-select: none;
             cursor: pointer;
           }
-          a:hover {
+          a:hover,
+          a:active {
             transform: skew(-20deg) scale(1);
           }
         `}</style>

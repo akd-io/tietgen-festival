@@ -154,7 +154,7 @@ export default props => {
           />
         ))}
         <SectionTitle>ARTISTS</SectionTitle>
-        <div>
+        <div className="yellow">
           {artists.map((artist, artistIndex, artistArray) => (
             <Artist
               key={artist.name}
@@ -190,6 +190,9 @@ export default props => {
         }
         .visible {
           opacity: 1;
+        }
+        .yellow {
+          color: yellow;
         }
       `}</style>
     </Fragment>

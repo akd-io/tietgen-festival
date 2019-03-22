@@ -85,6 +85,15 @@ export default class Index extends Component {
             font-family: 'TypoPRO Bebas Neue', 'Roboto', sans-serif;
             user-select: none;
           }
+          a,
+          a:link,
+          a:hover,
+          a:active,
+          a:visited {
+            text-decoration: none;
+            font-weight: bold;
+            color: inherit;
+          }
         `}</style>
       </Fragment>
     );

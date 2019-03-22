@@ -79,9 +79,7 @@ export const AboutSection = () => (
     <p>Tickets are delivered to the email listed when you buy the tickets.</p>
     <p>
       Neighbors can contact{' '}
-      <a className="link" href="mailto:billet@tietgenfestival.dk">
-        billet@tietgenfestival.dk
-      </a>{' '}
+      <a href="mailto:billet@tietgenfestival.dk">billet@tietgenfestival.dk</a>{' '}
       with their name and address for access to the ticket sale.
     </p>
     <br />
@@ -125,11 +123,6 @@ export const AboutSection = () => (
         border: none;
         border-radius: 0.5em;
       }
-      .ticket-button:link,
-      .ticket-button:hover,
-      .ticket-button:active {
-        text-decoration: none;
-      }
       p {
         margin-top: 0em;
         margin-bottom: 1em;
@@ -148,21 +141,12 @@ export const AboutSection = () => (
         flex-direction: row;
         margin-top: 2.5rem;
       }
-      .link,
-      .link:link,
-      .link:hover,
-      .link:active {
-        color: blacK;
-        text-decoration: none;
-        font-weight: bold;
-      }
       .fa,
       .fa:link,
       .fa:hover,
       .fa:active {
         font-size: 3rem;
         margin: 0.3rem;
-        color: black;
       }
       .footer-disclaimer {
         opacity: 0.5;
