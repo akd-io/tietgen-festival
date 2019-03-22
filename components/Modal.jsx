@@ -88,10 +88,13 @@ export default class Modal extends Component {
             position: absolute;
             top: 30px;
             left: 30px;
+            padding: 5px;
+            padding-bottom: 0px;
             font-family: 'TypoPRO Bebas Neue', sans-serif;
             font-size: 1.5em;
             user-select: none;
             cursor: pointer;
+            background-color: ${colors.yellow};
           }
           .content {
             display: flex;
