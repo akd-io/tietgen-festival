@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import { Fragment } from 'react';
 
 export default () => {
