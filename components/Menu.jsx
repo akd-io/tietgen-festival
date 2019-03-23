@@ -16,7 +16,6 @@ export default () => {
     },
   ];
   const scrollToSection = sectionID => {
-    console.log(sectionID);
     const menu = document.getElementById('menu');
     const section = document.getElementById(sectionID);
     const domRect = section.getBoundingClientRect();
