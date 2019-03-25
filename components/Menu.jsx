@@ -1,6 +1,7 @@
-import { Fragment } from 'react';
+import { Fragment, useState } from 'react';
 
 export default () => {
+  const [open, setOpen] = useState(false);
   const links = [
     {
       text: 'artists',
@@ -27,6 +28,9 @@ export default () => {
       behavior: 'smooth',
     });
   };
+  const toggleOpen = () => {
+    setOpen((newValue, prevValue) => !prevValue);
+  };
   return (
     <Fragment>
       {/* This spacer fills the same space as the menu, but does not have position=fixed, meaning it will push down the page content, so as to not make the menu overlap the top of the banner section. */}
@@ -38,7 +42,7 @@ export default () => {
         >
           TIETGEN FESTIVAL
         </div>
-        <div className="menu-link-container">
+        <div className="menu-links-container">
           {links.map(link => (
             <a onClick={() => scrollToSection(link.sectionID)} key={link.text}>
               {link.text}
@@ -48,6 +52,9 @@ export default () => {
             TICKET
           </a>
         </div>
+        <a className="menu-button" onClick={toggleOpen}>
+          <i className="fa fa-bars" />
+        </a>
       </div>
       <style jsx>{`
         .spacer {
@@ -68,6 +75,7 @@ export default () => {
           align-items: center;
           box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
           font-family: 'TypoPRO Bebas Neue', sans-serif;
+          font-weight: bold;
           user-select: none;
           z-index: 100;
         }
@@ -77,10 +85,19 @@ export default () => {
           padding-right: 1em;
           cursor: pointer;
         }
-        .menu-link-container {
-          display: flex;
+        .menu-links-container {
+          display: none;
           flex-direction: row;
           align-items: center;
+        }
+        @media screen and (min-width: 600px) {
+          .menu-links-container {
+            display: flex;
+          }
+          .menu-button,
+          .menu-dropdown {
+            display: none;
+          }
         }
         a {
           cursor: pointer;
