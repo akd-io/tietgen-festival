@@ -42,7 +42,6 @@ export default class Artist extends Component {
             font-size: 4rem;
             line-height: 0.8em;
             text-align: center;
-            word-break: break-word;
             transition: transform 0.1s ease;
             transform: skew(-20deg) scale(0.9);
             user-select: none;
