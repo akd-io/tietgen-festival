@@ -103,9 +103,8 @@ export default class Modal extends Component {
             flex-direction: column;
             align-items: center;
             box-sizing: border-box;
-            padding: 2em;
+            padding: 4em;
             width: 100%;
-            max-width: 700px;
           }
         `}</style>
       </Fragment>
