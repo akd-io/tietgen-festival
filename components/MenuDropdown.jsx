@@ -26,11 +26,12 @@ export default props => {
           padding: 1.5em;
           top: 80px;
           width: 100%;
+          z-index: 50;
           display: flex;
           flex-direction: column;
           background-color: white;
           box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
-          z-index: 50;
+          font-family: 'TypoPRO Bebas Neue', sans-serif;
           user-select: none;
           transition: opacity 0.1s ease, transform 0.1s ease;
         }
