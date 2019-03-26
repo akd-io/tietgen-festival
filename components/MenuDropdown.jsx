@@ -16,7 +16,7 @@ export default props => {
       <style jsx>{`
         .menu-dropdown {
           opacity: ${props.open ? '1' : '0'};
-          transform: ${props.open ? 'translate(0,0)' : 'translate(0,-110%)'};
+          transform: ${props.open ? 'translate(0,0)' : 'translate(0,-100%)'};
         }
       `}</style>
       <style jsx>{`
