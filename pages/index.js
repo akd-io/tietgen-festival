@@ -42,37 +42,30 @@ export default () => {
         />
       </Head>
 
-      <div className="wrapper">
-        <Menu />
-        <BannerSection />
-        <ArtistsSection updateModalData={updateModalData} />
-        <ActivitiesSection />
-        <AboutSection />
-      </div>
+      <Menu />
+      <BannerSection />
+      <ArtistsSection updateModalData={updateModalData} />
+      <ActivitiesSection />
+      <AboutSection />
 
       <Modal
         visible={modalVisible}
         setModalVisible={setModalVisible}
         modalData={modalData}
       />
-
-      <style jsx>{`
-        div.wrapper {
-          overflow-y: ${modalVisible ? 'hidden' : 'auto'};
-        }
-      `}</style>
-      <style jsx>{`
-        div.wrapper {
-          width: 100vw;
-          height: 100vh;
-          position: fixed;
+      <style jsx global>{`
+        body {
+          overflow: ${modalVisible ? 'hidden' : 'visible'};
         }
       `}</style>
       <style jsx global>{`
         /* TypoPRO Bebas Neue Regular */
         @import url('https://cdn.jsdelivr.net/npm/@typopro/web-bebas-neue@3.7.5/TypoPRO-BebasNeue-Regular.css');
+        html,
         body {
           margin: 0;
+        }
+        body {
           font-family: 'Roboto', sans-serif;
         }
         h1,
