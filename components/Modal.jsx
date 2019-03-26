@@ -106,6 +106,10 @@ export default class Modal extends Component {
             flex-direction: column;
             align-items: center;
             word-break: break-word;
+            font-size: calc(1em + 0.3vw);
+          }
+          .content h1 {
+            font-size: 2em;
           }
         `}</style>
       </Fragment>
