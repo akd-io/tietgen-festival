@@ -1,36 +1,49 @@
 import { Fragment, useState } from 'react';
+import MenuDropdown from './MenuDropdown';
+
+const links = [
+  {
+    text: 'artists',
+    sectionID: 'artists-section',
+  },
+  {
+    text: 'activities',
+    sectionID: 'activities-section',
+  },
+  {
+    text: 'about',
+    sectionID: 'about-section',
+  },
+];
 
 export default () => {
   const [open, setOpen] = useState(false);
-  const links = [
-    {
-      text: 'artists',
-      sectionID: 'artists-section',
-    },
-    {
-      text: 'activities',
-      sectionID: 'activities-section',
-    },
-    {
-      text: 'about',
-      sectionID: 'about-section',
-    },
-  ];
+
   const scrollToSection = sectionID => {
     const menu = document.getElementById('menu');
     const section = document.getElementById(sectionID);
-    const domRect = section.getBoundingClientRect();
-    const newWindowY =
-      window.scrollY + domRect.top - menu.getBoundingClientRect().height;
-    window.scrollTo({
-      top: newWindowY,
-      left: 0,
-      behavior: 'smooth',
-    });
+
+    if (section) {
+      const domRect = section.getBoundingClientRect();
+      const newWindowY =
+        window.scrollY + domRect.top - menu.getBoundingClientRect().height;
+      window.scrollTo({
+        top: newWindowY,
+        left: 0,
+        behavior: 'smooth',
+      });
+    }
   };
+
   const toggleOpen = () => {
-    setOpen((newValue, prevValue) => !prevValue);
+    setOpen(prevOpen => !prevOpen);
   };
+
+  const handleDropDownClick = sectionID => {
+    scrollToSection(sectionID);
+    toggleOpen();
+  };
+
   return (
     <Fragment>
       {/* This spacer fills the same space as the menu, but does not have position=fixed, meaning it will push down the page content, so as to not make the menu overlap the top of the banner section. */}
@@ -56,6 +69,9 @@ export default () => {
           <i className="fa fa-bars" />
         </a>
       </div>
+      {open ? (
+        <MenuDropdown links={links} open={open} onClick={handleDropDownClick} />
+      ) : null}
       <style jsx>{`
         .spacer {
           width: 100%;
