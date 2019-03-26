@@ -69,6 +69,7 @@ export class BannerSection extends Component {
             margin: 0;
             text-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
             font-size: 8.5vw;
+            word-break: normal;
           }
           sup {
             font-size: 0.5em;
