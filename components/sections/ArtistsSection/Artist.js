@@ -30,16 +30,17 @@ export default class Artist extends Component {
           a:link,
           a:visited {
             display: inline-block;
-            margin: 0.5rem;
+            margin: 0.2em;
             margin-left: 0;
             margin-right: 0;
-            padding: 4rem;
-            padding-bottom: 1rem;
-            padding-top: 0.25rem;
+            padding-bottom: 0.35em;
+            padding-top: 0.06em;
+            padding-left: 1.5em;
+            padding-right: 1.5em;
             overflow-y: hidden;
             font-family: 'TypoPRO Bebas Neue', sans-serif;
             font-weight: bold;
-            font-size: 4rem;
+            font-size: calc(2rem + 1.5vw);
             line-height: 0.8em;
             text-align: center;
             transition: transform 0.1s ease;
