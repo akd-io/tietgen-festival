@@ -66,6 +66,7 @@ export default () => {
           width: 100vw;
           height: 100vh;
           position: fixed;
+          -webkit-overflow-scrolling: touch;
         }
       `}</style>
       <style jsx global>{`
