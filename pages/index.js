@@ -42,8 +42,9 @@ export default () => {
         />
       </Head>
 
+      <Menu />
+
       <div className="wrapper">
-        <Menu />
         <BannerSection />
         <ArtistsSection updateModalData={updateModalData} />
         <ActivitiesSection />
