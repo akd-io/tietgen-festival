@@ -67,6 +67,7 @@ export default () => {
         }
         body {
           font-family: 'Roboto', sans-serif;
+          word-break: break-word;
         }
         h1,
         h2,
