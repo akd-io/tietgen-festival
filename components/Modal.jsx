@@ -99,12 +99,13 @@ export default class Modal extends Component {
             background-color: ${colors.yellow};
           }
           .content {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 40px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            box-sizing: border-box;
-            padding: 4em;
-            width: 100%;
+            word-break: break-word;
           }
         `}</style>
       </Fragment>
