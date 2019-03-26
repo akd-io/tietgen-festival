@@ -15,7 +15,8 @@ export default props => {
       </div>
       <style jsx>{`
         .menu-dropdown {
-          transform: ${props.open ? 'none' : 'translate(0,-100%)'};
+          opacity: ${props.open ? '1' : '0'};
+          transform: ${props.open ? 'translate(0,0)' : 'translate(0,-110%)'};
         }
       `}</style>
       <style jsx>{`
@@ -31,6 +32,7 @@ export default props => {
           box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
           z-index: 50;
           user-select: none;
+          transition: opacity 0.1s ease, transform 0.1s ease;
         }
         @media screen and (min-width: 600px) {
           .menu-dropdown {

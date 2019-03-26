@@ -69,9 +69,7 @@ export default () => {
           <i className="fa fa-bars" />
         </a>
       </div>
-      {open ? (
-        <MenuDropdown links={links} open={open} onClick={handleDropDownClick} />
-      ) : null}
+      <MenuDropdown links={links} open={open} onClick={handleDropDownClick} />
       <style jsx>{`
         .spacer {
           width: 100%;
