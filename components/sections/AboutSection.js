@@ -6,8 +6,8 @@ export const AboutSection = () => (
   <Section
     id="about-section"
     minHeight="100vh"
-    color={colors.black}
-    backgroundColor={colors.lightpink}
+    color={colors.pink}
+    backgroundColor={colors.lightblue}
   >
     <a
       className="ticket-button"
