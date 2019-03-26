@@ -33,10 +33,9 @@ export default class Artist extends Component {
             margin: 0.2em;
             margin-left: 0;
             margin-right: 0;
+            padding: 1.25em;
             padding-bottom: 0.35em;
             padding-top: 0.06em;
-            padding-left: 1.5em;
-            padding-right: 1.5em;
             overflow-y: hidden;
             font-family: 'TypoPRO Bebas Neue', sans-serif;
             font-weight: bold;
