@@ -45,6 +45,7 @@ export default props => {
           padding: 1.5em;
           text-transform: uppercase;
           text-align: center;
+          cursor: pointer;
         }
       `}</style>
     </Fragment>
