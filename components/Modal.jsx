@@ -61,8 +61,7 @@ export default class Modal extends Component {
             justify-content: flex-start;
             align-items: center;
             background-color: rgba(0, 0, 0, 0.5);
-            transition: all 0.2s ease;
-            transition-property: opacity, visibility;
+            transition: opacity 0.1s ease, visibility 0.1s ease;
           }
           .modal {
             position: absolute;
