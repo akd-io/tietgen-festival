@@ -30,6 +30,7 @@ export default props => {
           background-color: white;
           box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
           z-index: 50;
+          user-select: none;
         }
         @media screen and (min-width: 600px) {
           .menu-dropdown {
