@@ -27,10 +27,10 @@ export class BannerSection extends Component {
           color={colors.yellow}
         >
           <video
-            autoplay
+            autoPlay
             loop
             muted
-            playsinline
+            playsInline
             poster="/static/video_poster.jpg"
           >
             <source src="/static/video.mp4" type="video/mp4" />
