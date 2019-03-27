@@ -26,7 +26,13 @@ export class BannerSection extends Component {
           height="calc(100vh - 80px)"
           color={colors.yellow}
         >
-          <video autoPlay loop muted poster="/static/video_poster.jpg">
+          <video
+            autoplay
+            loop
+            muted
+            playsinline
+            poster="/static/video_poster.jpg"
+          >
             <source src="/static/video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
