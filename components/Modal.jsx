@@ -82,7 +82,7 @@ export default class Modal extends Component {
           }
           img {
             width: 100%;
-            max-height: 50%;
+            max-height: 50vh;
             object-fit: cover;
           }
           .close-button {
