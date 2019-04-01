@@ -1,4 +1,4 @@
-import { Fragment, useState } from 'react';
+import { useState } from 'react';
 import MenuDropdown from './MenuDropdown';
 
 const links = [
@@ -49,7 +49,7 @@ export default () => {
   };
 
   return (
-    <Fragment>
+    <>
       {/* This spacer fills the same space as the menu, but does not have position=fixed, meaning it will push down the page content, so as to not make the menu overlap the top of the banner section. */}
       <div className="spacer" />
       <div id="menu" className="menu">
@@ -124,6 +124,6 @@ export default () => {
           text-align: center;
         }
       `}</style>
-    </Fragment>
+    </>
   );
 };

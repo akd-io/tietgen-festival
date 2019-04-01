@@ -1,5 +1,4 @@
-import { Fragment } from 'react';
-import { Section } from './Section';
+import Section from './Section';
 import colors from '../colors';
 
 export default () => {
@@ -19,7 +18,7 @@ export default () => {
   };
 
   return (
-    <Fragment>
+    <>
       <Section
         id="banner-section"
         height="calc(100vh - 80px)"
@@ -110,6 +109,6 @@ export default () => {
           }
         }
       `}</style>
-    </Fragment>
+    </>
   );
 };

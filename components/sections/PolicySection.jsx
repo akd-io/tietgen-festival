@@ -1,8 +1,8 @@
-import { Section } from './Section';
-import { SectionTitle } from './SectionTitle';
+import Section from './Section';
+import SectionTitle from './SectionTitle';
 import colors from '../colors';
 
-export const PolicySection = () => (
+export default () => (
   <Section
     id="policy-section"
     minHeight="100vh"

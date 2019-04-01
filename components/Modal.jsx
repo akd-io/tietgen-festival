@@ -1,129 +1,121 @@
-import { Fragment, Component } from 'react';
 import colors from './colors';
 
-export default class Modal extends Component {
-  handleModalBackgroundOnClick = () => {
-    this.props.setModalVisible(false);
+export default props => {
+  const handleModalBackgroundOnClick = () => {
+    props.setModalVisible(false);
   };
 
-  handleModalOnClick = e => {
+  const handleModalOnClick = e => {
     e.stopPropagation();
   };
 
-  handleOnClickClose = () => {
-    this.props.setModalVisible(false);
+  const handleOnClickClose = () => {
+    props.setModalVisible(false);
   };
 
-  render() {
-    const { title, imageUrl, content } = this.props.modalData
-      ? this.props.modalData
-      : {
-          title: '',
-          imageUrl: '',
-          content: <Fragment />,
-        };
+  const { title, imageUrl, content } = props.modalData || {
+    title: '',
+    imageUrl: '',
+    content: <></>,
+  };
 
-    return (
-      <Fragment>
-        <div
-          className="modal-background"
-          onClick={this.handleModalBackgroundOnClick}
-        >
-          <div className="modal" onClick={this.handleModalOnClick}>
-            <a className="close-button" onClick={this.handleOnClickClose}>
-              CLOSE
-            </a>
-            <div className="scroll-view">
-              <img src={imageUrl} />
-              <div className="content">
-                <h1>{title}</h1>
-                {content}
-              </div>
+  return (
+    <>
+      <div className="modal-background" onClick={handleModalBackgroundOnClick}>
+        <div className="modal" onClick={handleModalOnClick}>
+          <a className="close-button" onClick={handleOnClickClose}>
+            CLOSE
+          </a>
+          <div className="scroll-view">
+            <img src={imageUrl} />
+            <div className="content">
+              <h1>{title}</h1>
+              {content}
             </div>
           </div>
         </div>
-        <style jsx>{`
-          .modal-background {
-            opacity: ${this.props.visible ? '1' : '0'};
-            visibility: ${this.props.visible ? 'visible' : 'hidden'};
-          }
-        `}</style>
-        <style jsx>{`
-          .modal-background {
-            position: fixed;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            z-index: 200;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            background-color: rgba(0, 0, 0, 0.5);
-            transition: opacity 0.1s ease, visibility 0.1s ease;
-          }
+      </div>
+      <style jsx>{`
+        .modal-background {
+          opacity: ${props.visible ? '1' : '0'};
+          visibility: ${props.visible ? 'visible' : 'hidden'};
+        }
+      `}</style>
+      <style jsx>{`
+        .modal-background {
+          position: fixed;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          z-index: 200;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+          background-color: rgba(0, 0, 0, 0.5);
+          transition: opacity 0.1s ease, visibility 0.1s ease;
+        }
+        .modal {
+          position: absolute;
+          width: 800px;
+          height: 100%;
+          margin-top: 20px;
+          max-width: calc(100vw - 40px);
+          max-height: calc(100vh - 40px);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+          background-color: ${colors.lightblue};
+          color: ${colors.pink};
+        }
+        @media screen and (min-width: 600px) {
           .modal {
-            position: absolute;
-            width: 800px;
-            height: 100%;
-            margin-top: 20px;
-            max-width: calc(100vw - 40px);
-            max-height: calc(100vh - 40px);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-            background-color: ${colors.lightblue};
-            color: ${colors.pink};
+            margin-top: 40px;
+            max-width: calc(100vw - 80px);
+            max-height: calc(100vh - 80px);
           }
-          @media screen and (min-width: 600px) {
-            .modal {
-              margin-top: 40px;
-              max-width: calc(100vw - 80px);
-              max-height: calc(100vh - 80px);
-            }
-          }
-          .scroll-view {
-            overflow-y: auto;
-          }
-          img {
-            width: 100%;
-            max-height: 50vh;
-            object-fit: cover;
-          }
-          .close-button {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            padding: 5px;
-            padding-bottom: 0px;
-            font-family: 'TypoPRO Bebas Neue', sans-serif;
-            font-size: 2em;
-            user-select: none;
-            cursor: pointer;
-            background-color: ${colors.yellow};
-          }
+        }
+        .scroll-view {
+          overflow-y: auto;
+        }
+        img {
+          width: 100%;
+          max-height: 50vh;
+          object-fit: cover;
+        }
+        .close-button {
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          padding: 5px;
+          padding-bottom: 0px;
+          font-family: 'TypoPRO Bebas Neue', sans-serif;
+          font-size: 2em;
+          user-select: none;
+          cursor: pointer;
+          background-color: ${colors.yellow};
+        }
+        .content {
+          box-sizing: border-box;
+          width: 100%;
+          padding: 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-size: calc(1em + 0.3vw);
+        }
+        @media screen and (min-width: 600px) {
           .content {
-            box-sizing: border-box;
-            width: 100%;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            font-size: calc(1em + 0.3vw);
+            padding: 40px;
           }
-          @media screen and (min-width: 600px) {
-            .content {
-              padding: 40px;
-            }
-          }
-          .content h1 {
-            font-size: 2em;
-            text-align: center;
-          }
-        `}</style>
-      </Fragment>
-    );
-  }
-}
+        }
+        .content h1 {
+          font-size: 2em;
+          text-align: center;
+        }
+      `}</style>
+    </>
+  );
+};

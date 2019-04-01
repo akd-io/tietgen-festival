@@ -1,7 +1,7 @@
-import { Fragment, Component, useState, Image } from 'react';
-import { Section } from '../Section';
+import { useState } from 'react';
+import Section from '../Section';
 import Artist from './Artist';
-import { SectionTitle } from '../SectionTitle';
+import SectionTitle from '../SectionTitle';
 import colors from '../../colors';
 
 export default props => {
@@ -289,7 +289,7 @@ export default props => {
   const [selectedArtist, setSelectedArtist] = useState(null);
 
   return (
-    <Fragment>
+    <>
       <Section
         id="artists-section"
         color={colors.pink}
@@ -344,6 +344,6 @@ export default props => {
           color: yellow;
         }
       `}</style>
-    </Fragment>
+    </>
   );
 };

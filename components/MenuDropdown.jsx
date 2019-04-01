@@ -1,8 +1,6 @@
-import { Fragment } from 'react';
-
 export default props => {
   return (
-    <Fragment>
+    <>
       <div className="menu-dropdown">
         {props.links.map(link => (
           <a key={link.text} onClick={() => props.onClick(link.sectionID)}>
@@ -47,6 +45,6 @@ export default props => {
           font-size: 1.5em;
         }
       `}</style>
-    </Fragment>
+    </>
   );
 };

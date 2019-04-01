@@ -1,5 +1,4 @@
-import { Fragment } from 'react';
-import { Section } from '../sections/Section';
+import Section from '../sections/Section';
 
 export default () => {
   const sponsorImageUrls = [
@@ -9,7 +8,7 @@ export default () => {
     '/static/sponsors/AmagerVestLokaludvalg.jpg',
   ];
   return (
-    <Fragment>
+    <>
       <Section id="footer-section" color="black" backgroundColor="white">
         <h2>Thanks to our sponsors</h2>
         <div className="sponsor-images">
@@ -39,6 +38,6 @@ export default () => {
           margin: 35px;
         }
       `}</style>
-    </Fragment>
+    </>
   );
 };

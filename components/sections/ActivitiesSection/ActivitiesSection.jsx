@@ -1,12 +1,11 @@
-import { Fragment } from 'react';
-import { Section } from '../Section';
-import { Activity } from './Activity';
-import { SectionTitle } from '../SectionTitle';
+import Section from '../Section';
+import Activity from './Activity';
+import SectionTitle from '../SectionTitle';
 import colors from '../../colors';
 
-export const ActivitiesSection = () => {
+export default () => {
   return (
-    <Fragment>
+    <>
       <Section
         id="activities-section"
         color={colors.yellow}
@@ -20,6 +19,6 @@ export const ActivitiesSection = () => {
           font-size: calc(1.4em + 1.4vw);
         }
       `}</style>
-    </Fragment>
+    </>
   );
 };

@@ -1,4 +1,4 @@
-export const Section = props => (
+export default props => (
   <div id={props.id} className="section">
     {props.children}
     <style jsx>{`
