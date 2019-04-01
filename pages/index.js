@@ -4,7 +4,8 @@ import Menu from '../components/Menu';
 import BannerSection from '../components/sections/BannerSection';
 import ArtistsSection from '../components/sections/ArtistsSection/ArtistsSection';
 import { ActivitiesSection } from '../components/sections/ActivitiesSection/ActivitiesSection';
-import { AboutSection } from '../components/sections/AboutSection';
+import AboutSection from '../components/sections/AboutSection';
+import TicketsSection from '../components/sections/TicketsSection';
 import FooterSection from '../components/sections/FooterSection';
 import Modal from '../components/Modal';
 
@@ -48,6 +49,7 @@ export default () => {
       <ArtistsSection updateModalData={updateModalData} />
       <ActivitiesSection />
       <AboutSection />
+      <TicketsSection />
       <FooterSection />
 
       <Modal

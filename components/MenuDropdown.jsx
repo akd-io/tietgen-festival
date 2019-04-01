@@ -9,9 +9,6 @@ export default props => {
             {link.text}
           </a>
         ))}
-        <a href="https://ticket.livebackend.com/tietgen-festival/api/heyticket/v1/member">
-          TICKET
-        </a>
       </div>
       <style jsx>{`
         .menu-dropdown {

@@ -14,6 +14,10 @@ const links = [
     text: 'about',
     sectionID: 'about-section',
   },
+  {
+    text: 'tickets',
+    sectionID: 'tickets-section',
+  },
 ];
 
 export default () => {
@@ -61,9 +65,6 @@ export default () => {
               {link.text}
             </a>
           ))}
-          <a href="https://ticket.livebackend.com/tietgen-festival/api/heyticket/v1/member">
-            TICKET
-          </a>
         </div>
         <a className="menu-button" onClick={toggleOpen}>
           <i className="fa fa-bars" />
