@@ -10,7 +10,7 @@ export default () => {
   ];
   return (
     <Fragment>
-      <Section id="footer" color="black" backgroundColor="white">
+      <Section id="footer-section" color="black" backgroundColor="white">
         <h2>Thanks to our sponsors</h2>
         <div className="sponsor-images">
           {sponsorImageUrls.map(url => (
