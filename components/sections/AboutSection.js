@@ -9,78 +9,30 @@ export const AboutSection = () => (
     color={colors.pink}
     backgroundColor={colors.lightblue}
   >
-    <a
-      className="ticket-button"
-      href="https://ticket.livebackend.com/tietgen-festival/api/heyticket/v1/member"
-    >
-      Buy tickets
-    </a>
-    <br />
-    <br />
-    <br />
-    <br />
-    <SectionTitle>Tickets this year</SectionTitle>
+    <SectionTitle>ABOUT TIETGEN FESTIVAL</SectionTitle>
     <p>
-      Tietgen Festival is returning on the 3rd and 4th of May this year! Mark
-      the dates in your calendar - It is going to be a blast.
+      The Tietgen Festival is the annual festival at the Tietgen Residence Hall!
+      The dorm houses 390 students from different educational backgrounds, once
+      a year in May, all friends and neighbors of the dorm are invited to come
+      into the circle and experience the Tietgen Spirit. The ambition is to
+      create a festival where friends and neighbors can come and enjoy the dorm
+      and its unique possibility for cultural mediation.
     </p>
     <p>
-      Stay tuned on this website for more updates about the festival, and see
-      below for ticket information.
+      The festival distinguishes itself from other festivals by being not just
+      another party, but by being a festival which promotes curiosity, learning
+      and cultural experiences alongside the great party! The festival is
+      non-profit and is entirely run by volunteers from the dorm. All residents
+      are invited to pitch in and help shape the festival from the festival
+      vision:
     </p>
     <p>
-      Contact{' '}
-      <a className="link" href="mailto:billet@tietgenfestival.dk">
-        billet@tietgenfestival.dk
-      </a>{' '}
-      for questions about tickets.
-    </p>
-    <h2>Tickets for residents</h2>
-    <p>
-      All residents of Tietgenkollegiet can buy their own festival ticket at a
-      special price, before the official ticket sale begins.
-    </p>
-    <p>
-      The ticket sale for residents happens between February 14th at 20:00 and
-      February 28th at 23:59. After this deadline, tickets can be purchased at
-      normal price during the general ticket sale. Resident prices are 100 DKK
-      for a one-day ticket, and 150 DKK for a two-day ticket, however you are
-      more than welcome to pay the regular prices of 145 DKK/195 DKK if you want
-      to support the festival.
-    </p>
-    <p>
-      Buy your resident ticket by sending the above amount by MobilePay
-      (MobilePay number available on the Tietgen Facebook Group), and write your
-      room number as the message for the transfer.
-    </p>
-    <p>Your ticket will arrive in your physical mailbox.</p>
-    <h2>Tickets for friends and neighbors</h2>
-    <p>
-      All friends of residents and neighbors of the Tietgen Residence Hall can
-      purchase tickets for Tietgen Festival through the residents of the dorm,
-      who will all receive a login for the general ticket sale in their
-      mailboxes.
-    </p>
-    <p>
-      The general ticket sale takes place between March 1st at 10:00 and April
-      1st at 23:59. Prices are 145 DKK for one-day tickets, and 195 DKK for
-      two-day tickets.
-    </p>
-    <p>
-      Tickets are purchased with the login all residents have received in their
-      mailbox. All residents can buy up to 10 tickets for their friends.
-      However, be aware that tickets can get sold out, and residents are
-      therefore not guaranteed 10 tickets.
-    </p>
-    <p>
-      Ask your friend at the Tietgen Residence Hall to buy a ticket for you, or
-      ask them for their login so you can do it yourself.
-    </p>
-    <p>Tickets are delivered to the email listed when you buy the tickets.</p>
-    <p>
-      Neighbors can contact{' '}
-      <a href="mailto:billet@tietgenfestival.dk">billet@tietgenfestival.dk</a>{' '}
-      with their name and address for access to the ticket sale.
+      <i>
+        “The Annual Tietgen Festival strives to engage residents to come
+        together in order to invite surrounding neighbors and fellow peers to
+        demystify Tietgen, promote cultural curiosity and celebrate the Tietgen
+        spirit.
+      </i>
     </p>
     <br />
     <br />
@@ -107,7 +59,7 @@ export const AboutSection = () => (
     <br />
     <br />
     <br />
-    <p className="footer-disclaimer">
+    <p className="disclaimer">
       Tietgen Festival is for residents of the dorm, friends of residents and
       neighbors.
     </p>
@@ -149,7 +101,7 @@ export const AboutSection = () => (
         font-size: 3rem;
         margin: 0.3rem;
       }
-      .footer-disclaimer {
+      .disclaimer {
         opacity: 0.5;
         font-style: italic;
       }
