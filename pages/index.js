@@ -5,6 +5,7 @@ import { BannerSection } from '../components/sections/BannerSection';
 import ArtistsSection from '../components/sections/ArtistsSection/ArtistsSection';
 import { ActivitiesSection } from '../components/sections/ActivitiesSection/ActivitiesSection';
 import { AboutSection } from '../components/sections/AboutSection';
+import FooterSection from '../components/sections/FooterSection';
 import Modal from '../components/Modal';
 
 export default () => {
@@ -47,6 +48,7 @@ export default () => {
       <ArtistsSection updateModalData={updateModalData} />
       <ActivitiesSection />
       <AboutSection />
+      <FooterSection />
 
       <Modal
         visible={modalVisible}
