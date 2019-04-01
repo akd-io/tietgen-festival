@@ -18,19 +18,6 @@ export default () => {
     });
   };
 
-  const isSafari = () => {
-    if (typeof window === 'undefined') return false; //If on server return false
-    return (
-      /constructor/i.test(window.HTMLElement) ||
-      (function(p) {
-        return p.toString() === '[object SafariRemoteNotification]';
-      })(
-        !window['safari'] ||
-          (typeof safari !== 'undefined' && safari.pushNotification)
-      )
-    );
-  };
-
   return (
     <Fragment>
       <Section
@@ -38,21 +25,18 @@ export default () => {
         height="calc(100vh - 80px)"
         color={colors.yellow}
       >
-        {isSafari() ? (
-          <img className="poster" src="/static/video_poster.jpg" />
-        ) : (
-          <video
-            controls="false"
-            autoPlay
-            loop
-            muted
-            playsInline
-            poster="/static/video_poster.jpg"
-          >
-            <source src="/static/video.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        )}
+        <img className="poster" src="/static/video_poster.jpg" />
+        <video
+          controls={false}
+          autoPlay
+          loop
+          muted
+          playsInline
+          poster="/static/video_poster.jpg"
+        >
+          <source src="/static/video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <div className="container">
           <img className="logo" src="static/logo.png" />
           <div className="title-container">
@@ -74,6 +58,17 @@ export default () => {
           height: calc(100vh - 80px);
           z-index: -1;
           object-fit: cover;
+        }
+        video {
+          display: none;
+        }
+        @media screen and (min-width: 800px) {
+          video {
+            display: block;
+          }
+          .poster {
+            display: none;
+          }
         }
         .container {
           display: flex;
