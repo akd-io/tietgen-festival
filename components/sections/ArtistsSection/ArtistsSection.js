@@ -151,6 +151,140 @@ export default props => {
       ),
       imageUrl: '/static/artists/RapBattle.jpg',
     },
+    {
+      name: 'Amanita',
+      description: (
+        <>
+          <p>
+            Grab a refreshing drink in the bar, find yourself a spot in the
+            grass and experience completely new music when AMANITA takes the
+            stage Saturday afternoon.
+          </p>
+          <p>
+            You'll know Mille from from the trio "Place on Earth who won X
+            Factor in 2018. She has now started the band AMANITA with a group of
+            high school friends. The band consists of Mille Hassenkam on vocals,
+            Rasmus Torp on guitar, Alex Stark on drums and Asmus Døssing on
+            bass. With AMANITA Mille has been given an entirely new venue for
+            her singing and songwriting. When her passion and focus on text and
+            ambience is combined with David, Rasmus and Alex' musical talent,
+            the music truly finds its' balance. Together the band finds a sound
+            inspired by everything from Billie Eilish to Stevie Wonder, and are
+            slowly developing their own sound.
+          </p>
+        </>
+      ),
+      imageUrl: '/static/artists/Amanita.jpeg',
+    },
+    {
+      name: 'Aufori',
+      description: (
+        <>
+          <p>
+            Imagine the perfect morning. How about sitting in the sun, on a
+            carpet in the soft grass with your friends, while enjoying a freshly
+            baked bun and a cup of newly brewed coffee? Then try adding the
+            wonderful tones of AUFORI in the background.
+          </p>
+          <p>
+            Tietgen Festival is thrilled to present AUFORI. Their songs create a
+            safe space to reflect over the world instead of worrying about it -
+            and we would love to invite you guys to join us in that space.
+            Moving within the genres of Indie / Singer-Songwriter, the songs
+            embody a musical peace and tenderness. Listening to AUFORI is all
+            about closing your eyes and let time stand still for a moment.
+          </p>
+        </>
+      ),
+      imageUrl: '/static/artists/Aufori.jpg',
+    },
+    {
+      name: 'Hedegaard',
+      description: (
+        <>
+          <p>
+            It was a wild party when HEDEGAARD took the stage at Tietgen
+            Festival last year! Therefore expectations are sky high as we
+            proudly present his return to the 2019 festival with an even bigger
+            show!
+          </p>
+          <p>
+            The award winning DJ and producer began his career remixing tracks
+            on YouTube for night clubs. Since then it's been full speed ahead,
+            and with hits like 'Ready to love you' and 'Need you right now' he
+            has passed more than 20 million Spotify streams.
+          </p>
+        </>
+      ),
+      imageUrl: '/static/artists/Hedegaard.jpg',
+    },
+    {
+      name: 'Clara',
+      description: (
+        <>
+          <p>
+            You know CLARA from the P3 Gold awards, where she was nominated in
+            the P3 Talent category. Now you get to experience her live at
+            Tietgen when she plays Saturday night!
+          </p>
+          <p>
+            CLARA first started producing music all the way back in middle
+            school when she was contacted by a producer. Since she has been
+            dedicated to her music resulting in her first record deal. On her
+            debut album 'August Eighteen' are songs like 'Stop Pretending',
+            'Forgive Me' and 'What They Say' which originate from her early
+            teenage years, but also new material like the opening song
+            'Slippin'.
+          </p>
+        </>
+      ),
+      imageUrl: '/static/artists/Clara.jpg',
+    },
+    {
+      name: 'Johnny Deluxe',
+      description: (
+        <>
+          <p>
+            JOHNNY DELUXE are in the middle of their comeback. The generation
+            who were still young when they first reigned the top charts are
+            making them explode once more. More than 70 concerts around Denmark
+            speaks for itself. In other words: JOHNNY DELUXE are back - with
+            more hits and more party than ever before!
+          </p>
+          <p>
+            If you have ever been to a party where someone played the songs
+            “Drenge som mig” or “Elskovspony” you will know why the dancefloor
+            is suddenly full of people. Now, imagine how it is going to look
+            when JOHNNY DELUXE plays at this years Tietgen Festival. We can
+            guarantee lots of dancing and a huge party, when the boys are
+            playing Saturday night in the circle!
+          </p>
+        </>
+      ),
+      imageUrl: '/static/artists/JohnnyDeluxe.jpg',
+    },
+    {
+      name: 'Vava Voom',
+      description: (
+        <>
+          <p>
+            Look forward to VAVA VOOM and their playful lyrics, exciting rhythms
+            and challenging tunes, delivered with a sexy and energetic attitude!
+          </p>
+          <p>
+            VAVA VOOM is a 6-man orchestra consisting of 5 instrumentalists and
+            a female singer who lives a youthful spirit through their jazzy
+            licks and musical story telling. The band delivers a complete story
+            through an immersive live performance. The groove is a fusion of
+            00's neo-soul references, which is complimented by their text
+            universe inspired by a modern, urban attitude, taking you into the
+            street life of graffiti, asphalt and 6 young spirits’ version of
+            reality.
+          </p>
+        </>
+      ),
+      imageUrl: '/static/artists/VavaVoom.jpeg',
+    },
   ];
   const [selectedArtist, setSelectedArtist] = useState(null);
 
