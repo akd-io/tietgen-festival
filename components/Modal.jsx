@@ -67,15 +67,22 @@ export default class Modal extends Component {
             position: absolute;
             width: 800px;
             height: 100%;
-            margin-top: 40px;
-            max-width: calc(100vw - 80px);
-            max-height: calc(100vh - 80px);
+            margin-top: 20px;
+            max-width: calc(100vw - 40px);
+            max-height: calc(100vh - 40px);
             display: flex;
             flex-direction: column;
             align-items: center;
             box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
             background-color: ${colors.lightblue};
             color: ${colors.pink};
+          }
+          @media screen and (min-width: 600px) {
+            .modal {
+              margin-top: 40px;
+              max-width: calc(100vw - 80px);
+              max-height: calc(100vh - 80px);
+            }
           }
           .scroll-view {
             overflow-y: auto;
@@ -100,11 +107,16 @@ export default class Modal extends Component {
           .content {
             box-sizing: border-box;
             width: 100%;
-            padding: 40px;
+            padding: 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
             font-size: calc(1em + 0.3vw);
+          }
+          @media screen and (min-width: 600px) {
+            .content {
+              padding: 40px;
+            }
           }
           .content h1 {
             font-size: 2em;
