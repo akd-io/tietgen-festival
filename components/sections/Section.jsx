@@ -3,14 +3,10 @@ export default props => (
     {props.children}
     <style jsx>{`
       .section {
-        ${'height' in props ? `height: ${props.height};` : ''}
-        ${'minHeight' in props ? `min-height: ${props.minHeight};` : ''}
-        ${'color' in props ? `color: ${props.color};` : ''}
-        ${
-          'backgroundColor' in props && props.backgroundColor
-            ? `background: ${props.backgroundColor};`
-            : ''
-        }
+        ${props.height ? `height: ${props.height};` : ''}
+        ${props.minHeight ? `min-height: ${props.minHeight};` : ''}
+        ${props.color ? `color: ${props.color};` : ''}
+        ${props.backgroundColor ? `background: ${props.backgroundColor};` : ''}
       }
     `}</style>
     <style jsx>{`
