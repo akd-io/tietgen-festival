@@ -1,43 +1,55 @@
-import Head from 'next/head';
-import { Fragment } from 'react';
+import { useState } from 'react';
+import MenuDropdown from './MenuDropdown';
+
+const links = [
+  {
+    text: 'artists',
+    sectionID: 'artists-section',
+  },
+  {
+    text: 'activities',
+    sectionID: 'activities-section',
+  },
+  {
+    text: 'about',
+    sectionID: 'about-section',
+  },
+  {
+    text: 'tickets',
+    sectionID: 'tickets-section',
+  },
+];
 
 export default () => {
-  const links = [
-    {
-      text: 'artists',
-      sectionID: 'artists-section',
-    },
-    {
-      text: 'activities',
-      sectionID: 'activities-section',
-    },
-    {
-      text: 'about',
-      sectionID: 'about-section',
-    },
-  ];
+  const [open, setOpen] = useState(false);
+
   const scrollToSection = sectionID => {
-    console.log(sectionID);
     const menu = document.getElementById('menu');
     const section = document.getElementById(sectionID);
-    const domRect = section.getBoundingClientRect();
-    const newWindowY =
-      window.scrollY + domRect.top - menu.getBoundingClientRect().height;
-    window.scrollTo({
-      top: newWindowY,
-      left: 0,
-      behavior: 'smooth',
-    });
+
+    if (section) {
+      const domRect = section.getBoundingClientRect();
+      const newWindowY =
+        window.scrollY + domRect.top - menu.getBoundingClientRect().height;
+      window.scrollTo({
+        top: newWindowY,
+        left: 0,
+        behavior: 'smooth',
+      });
+    }
   };
+
+  const toggleOpen = () => {
+    setOpen(prevOpen => !prevOpen);
+  };
+
+  const handleDropDownClick = sectionID => {
+    scrollToSection(sectionID);
+    toggleOpen();
+  };
+
   return (
-    <Fragment>
-      <Head>
-        <script
-          async
-          defer
-          src="https://cdn-ticket.livebackend.com/prod/45/embed/877.js?ver=pmgr1r"
-        />
-      </Head>
+    <>
       {/* This spacer fills the same space as the menu, but does not have position=fixed, meaning it will push down the page content, so as to not make the menu overlap the top of the banner section. */}
       <div className="spacer" />
       <div id="menu" className="menu">
@@ -47,24 +59,18 @@ export default () => {
         >
           TIETGEN FESTIVAL
         </div>
-        <div className="menu-link-container">
+        <div className="menu-links-container">
           {links.map(link => (
-            <a
-              onClick={() => scrollToSection(link.sectionID)}
-              className="menu-link"
-              key={link.text}
-            >
+            <a onClick={() => scrollToSection(link.sectionID)} key={link.text}>
               {link.text}
             </a>
           ))}
-          <a
-            className="menu-link"
-            href="https://ticket.livebackend.com/tietgen-festival/api/heyticket/v1/member"
-          >
-            TICKET
-          </a>
         </div>
+        <a className="menu-button" onClick={toggleOpen}>
+          <i className="fa fa-bars" />
+        </a>
       </div>
+      <MenuDropdown links={links} open={open} onClick={handleDropDownClick} />
       <style jsx>{`
         .spacer {
           width: 100%;
@@ -84,6 +90,7 @@ export default () => {
           align-items: center;
           box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
           font-family: 'TypoPRO Bebas Neue', sans-serif;
+          font-weight: bold;
           user-select: none;
           z-index: 100;
         }
@@ -93,12 +100,21 @@ export default () => {
           padding-right: 1em;
           cursor: pointer;
         }
-        .menu-link-container {
-          display: flex;
+        .menu-links-container {
+          display: none;
           flex-direction: row;
           align-items: center;
         }
-        .menu-link {
+        @media screen and (min-width: 600px) {
+          .menu-links-container {
+            display: flex;
+          }
+          .menu-button,
+          .menu-dropdown {
+            display: none;
+          }
+        }
+        a {
           cursor: pointer;
           text-transform: uppercase;
           font-size: 1.5em;
@@ -106,9 +122,8 @@ export default () => {
           padding-left: 1em;
           padding-right: 1em;
           text-align: center;
-          text-decoration: none;
         }
       `}</style>
-    </Fragment>
+    </>
   );
 };
