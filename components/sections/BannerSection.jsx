@@ -45,6 +45,12 @@ export default () => {
             <h2 className="title">Tietgenkollegiet</h2>
           </div>
         </div>
+        <a
+          className="ticket-button"
+          href="https://ticket.livebackend.com/tietgen-festival/api/heyticket/v1/member"
+        >
+          Buy tickets
+        </a>
         <a onClick={handleArrowDownOnClick}>
           <i className="fa fa-arrow-down" />
         </a>
@@ -92,14 +98,29 @@ export default () => {
         sup {
           font-size: 0.5em;
         }
+        .ticket-button {
+          margin-top: 2em;
+          padding: 1em;
+          padding-top: 0.9em;
+          padding-bottom: 0.7em;
+          font-family: 'TypoPRO Bebas Neue', 'Roboto', sans-serif;
+          font-size: 1.5em;
+          color: ${colors.yellow};
+          background-color: ${colors.pink};
+          border: none;
+          border-radius: 0.5em;
+        }
         .fa-arrow-down {
           position: absolute;
           left: calc(50vw - 2rem);
-          bottom: 40px;
+          bottom: 20px;
           font-size: 4rem;
           cursor: pointer;
         }
         @media screen and (min-width: 800px) {
+          .ticket-button {
+            font-size: 2em;
+          }
           .logo {
             width: calc(0.35 * 800px);
             margin-right: calc(0.02 * 800px);
