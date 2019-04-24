@@ -3,6 +3,8 @@ import Section from '../Section';
 import Artist from './Artist';
 import SectionTitle from '../SectionTitle';
 import colors from '../../colors';
+import ButtonCloud from '../../ButtonCloud';
+import ButtonCloudButton from '../../ButtonCloudButton';
 
 export default props => {
   const artists = [
@@ -288,6 +290,17 @@ export default props => {
   ];
   const [selectedArtist, setSelectedArtist] = useState(null);
 
+  const handleButtonOnClick = artist => {
+    props.updateModalData({
+      title: artist.name,
+      imageUrl: artist.imageUrl,
+      content: artist.description,
+    });
+  };
+
+  const handleButtonMouseOut = index =>
+    setSelectedArtist(prevIndex => (prevIndex === index ? null : index));
+
   return (
     <>
       <Section
@@ -303,32 +316,22 @@ export default props => {
           />
         ))}
         <SectionTitle>ARTISTS</SectionTitle>
-        <div className="yellow">
-          {artists.map((artist, artistIndex, artistArray) => (
-            <Artist
+        <ButtonCloud>
+          {artists.map((artist, index, array) => (
+            <ButtonCloudButton
               key={artist.name}
-              updateModalData={props.updateModalData}
-              artist={artist}
+              color={colors.yellow}
               backgroundColor={colors.pink}
-              onMouseOver={() => setSelectedArtist(artistIndex)}
-              onMouseOut={artistIndex =>
-                setSelectedArtist(prevArtistIndex =>
-                  prevArtistIndex == artistIndex ? null : artistIndex
-                )
-              }
-            />
+              onClick={() => handleButtonOnClick(artist)}
+              onMouseOver={() => setSelectedArtist(index)}
+              onMouseOut={() => handleButtonMouseOut(index)}
+            >
+              {artist.name}
+            </ButtonCloudButton>
           ))}
-        </div>
+        </ButtonCloud>
       </Section>
       <style jsx>{`
-        div {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: center;
-          width: 100%;
-          max-width: 1100px;
-        }
         img {
           position: absolute;
           width: 100%;
@@ -339,9 +342,6 @@ export default props => {
         }
         .visible {
           opacity: 1;
-        }
-        .yellow {
-          color: yellow;
         }
       `}</style>
     </>
