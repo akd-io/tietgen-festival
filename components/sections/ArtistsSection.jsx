@@ -307,9 +307,9 @@ export default props => {
         color={colors.pink}
         backgroundColor={colors.yellow}
       >
-        {artists.map((artist, artistIndex, artistArray) => (
+        {artists.map((artist, index, array) => (
           <img
-            className={selectedArtist == artistIndex ? 'visible' : ''}
+            className={selectedArtist == index ? 'visible' : ''}
             key={artist.imageUrl}
             src={artist.imageUrl}
           />
