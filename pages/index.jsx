@@ -48,7 +48,7 @@ export default () => {
 
       <BannerSection />
       <ArtistsSection updateModalData={updateModalData} />
-      <ActivitiesSection />
+      <ActivitiesSection updateModalData={updateModalData} />
       <AboutSection />
       <TicketsSection />
       <FooterSection />
