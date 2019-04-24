@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Head from 'next/head';
 import Menu from '../components/Menu';
 import BannerSection from '../components/sections/BannerSection';
-import ActivitiesSection from '../components/sections/ActivitiesSection/ActivitiesSection';
+import ActivitiesSection from '../components/sections/ActivitiesSection';
 import ArtistsSection from '../components/sections/ArtistsSection';
 import AboutSection from '../components/sections/AboutSection';
 import TicketsSection from '../components/sections/TicketsSection';

@@ -1,6 +1,6 @@
-import Section from '../Section';
-import SectionTitle from '../SectionTitle';
-import colors from '../../colors';
+import Section from './Section';
+import SectionTitle from './SectionTitle';
+import colors from '../colors';
 
 export default () => {
   return (
