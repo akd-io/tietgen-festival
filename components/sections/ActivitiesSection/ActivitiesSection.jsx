@@ -1,5 +1,4 @@
 import Section from '../Section';
-import Activity from './Activity';
 import SectionTitle from '../SectionTitle';
 import colors from '../../colors';
 
