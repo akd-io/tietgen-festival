@@ -304,8 +304,8 @@ export default props => {
     <>
       <Section
         id="activities-section"
-        color={colors.pink}
-        backgroundColor={colors.yellow}
+        color={colors.yellow}
+        backgroundColor={colors.pink}
       >
         {activities.map((activity, index, array) => (
           <img
@@ -319,8 +319,8 @@ export default props => {
           {activities.map((activity, index, array) => (
             <ButtonCloudButton
               key={activity.name}
-              color={colors.yellow}
-              backgroundColor={colors.pink}
+              color={colors.pink}
+              backgroundColor={colors.yellow}
               onClick={() => handleButtonOnClick(activity)}
               onMouseOver={() => setSelectedActivity(index)}
               onMouseOut={() => handleButtonMouseOut(index)}
