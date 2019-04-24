@@ -1,10 +1,9 @@
 import { useState } from 'react';
-import Section from '../Section';
-import Artist from './Artist';
-import SectionTitle from '../SectionTitle';
-import colors from '../../colors';
-import ButtonCloud from '../../ButtonCloud';
-import ButtonCloudButton from '../../ButtonCloudButton';
+import Section from './Section';
+import SectionTitle from './SectionTitle';
+import colors from '../colors';
+import ButtonCloud from '../ButtonCloud';
+import ButtonCloudButton from '../ButtonCloudButton';
 
 export default props => {
   const artists = [
