@@ -8,7 +8,11 @@ export default props => (
       {props.children}
     </a>
     <style jsx>{`
-      a {
+      a,
+      a:link,
+      a:visited,
+      a:hover,
+      a:active {
         ${props.color ? `color: ${props.color};` : ''}
         ${props.backgroundColor
           ? `background-color: ${props.backgroundColor};`
