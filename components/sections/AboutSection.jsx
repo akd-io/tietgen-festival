@@ -6,8 +6,8 @@ export default () => (
   <Section
     id="about-section"
     minHeight="100vh"
-    color={colors.pink}
-    backgroundColor={colors.lightblue}
+    color={colors.yellow}
+    backgroundColor={colors.pink}
   >
     <SectionTitle>ABOUT TIETGEN FESTIVAL</SectionTitle>
     <p>
