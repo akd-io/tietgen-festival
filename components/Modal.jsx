@@ -27,7 +27,7 @@ export default props => {
             CLOSE
           </a>
           <div className="scroll-view">
-            <img src={imageUrl} />
+            {imageUrl ? <img src={imageUrl} /> : null}
             <div className="content">
               <h1>{title}</h1>
               {content}

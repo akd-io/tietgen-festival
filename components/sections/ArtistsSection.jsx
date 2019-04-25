@@ -1,8 +1,9 @@
 import { useState } from 'react';
-import Section from '../Section';
-import Artist from './Artist';
-import SectionTitle from '../SectionTitle';
-import colors from '../../colors';
+import Section from './Section';
+import SectionTitle from './SectionTitle';
+import colors from '../colors';
+import ButtonCloud from '../ButtonCloud';
+import ButtonCloudButton from '../ButtonCloudButton';
 
 export default props => {
   const artists = [
@@ -288,6 +289,17 @@ export default props => {
   ];
   const [selectedArtist, setSelectedArtist] = useState(null);
 
+  const handleButtonOnClick = artist => {
+    props.updateModalData({
+      title: artist.name,
+      imageUrl: artist.imageUrl,
+      content: artist.description,
+    });
+  };
+
+  const handleButtonMouseOut = index =>
+    setSelectedArtist(prevIndex => (prevIndex === index ? null : index));
+
   return (
     <>
       <Section
@@ -295,40 +307,32 @@ export default props => {
         color={colors.pink}
         backgroundColor={colors.yellow}
       >
-        {artists.map((artist, artistIndex, artistArray) => (
-          <img
-            className={selectedArtist == artistIndex ? 'visible' : ''}
-            key={artist.imageUrl}
-            src={artist.imageUrl}
-          />
-        ))}
-        <SectionTitle>ARTISTS</SectionTitle>
-        <div className="yellow">
-          {artists.map((artist, artistIndex, artistArray) => (
-            <Artist
-              key={artist.name}
-              updateModalData={props.updateModalData}
-              artist={artist}
-              backgroundColor={colors.pink}
-              onMouseOver={() => setSelectedArtist(artistIndex)}
-              onMouseOut={artistIndex =>
-                setSelectedArtist(prevArtistIndex =>
-                  prevArtistIndex == artistIndex ? null : artistIndex
-                )
-              }
+        {artists.map((artist, index, array) =>
+          artist.name && artist.description && artist.imageUrl ? (
+            <img
+              className={selectedArtist == index ? 'visible' : ''}
+              key={artist.imageUrl}
+              src={artist.imageUrl}
             />
+          ) : null
+        )}
+        <SectionTitle>ARTISTS</SectionTitle>
+        <ButtonCloud>
+          {artists.map((artist, index, array) => (
+            <ButtonCloudButton
+              key={artist.name}
+              color={colors.yellow}
+              backgroundColor={colors.pink}
+              onClick={() => handleButtonOnClick(artist)}
+              onMouseOver={() => setSelectedArtist(index)}
+              onMouseOut={() => handleButtonMouseOut(index)}
+            >
+              {artist.name}
+            </ButtonCloudButton>
           ))}
-        </div>
+        </ButtonCloud>
       </Section>
       <style jsx>{`
-        div {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: center;
-          width: 100%;
-          max-width: 1100px;
-        }
         img {
           position: absolute;
           width: 100%;
@@ -339,9 +343,6 @@ export default props => {
         }
         .visible {
           opacity: 1;
-        }
-        .yellow {
-          color: yellow;
         }
       `}</style>
     </>
