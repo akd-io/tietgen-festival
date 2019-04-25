@@ -103,11 +103,10 @@ export default props => {
         <>
           <p>
             Student Revues is a great tradition at Danish universities and
-            Saturday afternoon we have invited two of the biggest: the revues of
-            medicines and political science. They will each entertain for 30
-            minutes with their best sketches. Join and get an insight into
-            medical and political student humor - there is guarantee for
-            laughing.
+            Saturday afternoon we have invited Statskundskabsrevyen (The revue
+            of political science). They will entertain with their best sketches
+            from their recent revue. Join and get an insight into general and
+            political student humor - there is guarantee for laughing.
           </p>
         </>
       ),
