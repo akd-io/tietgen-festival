@@ -12,7 +12,7 @@ export default props => {
       description: (
         <>
           <p>
-            Start your friday night with CLUB60, where you get the chance to
+            Start your friday night with CLUB 60, where you get the chance to
             enjoy a shot of beer every minute for one hour, while our DJ’s is
             playing different songs 🍻🍻🍻
           </p>
