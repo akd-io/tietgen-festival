@@ -307,13 +307,15 @@ export default props => {
         color={colors.pink}
         backgroundColor={colors.yellow}
       >
-        {artists.map((artist, index, array) => (
-          <img
-            className={selectedArtist == index ? 'visible' : ''}
-            key={artist.imageUrl}
-            src={artist.imageUrl}
-          />
-        ))}
+        {artists.map((artist, index, array) =>
+          artist.name && artist.description && artist.imageUrl ? (
+            <img
+              className={selectedArtist == index ? 'visible' : ''}
+              key={artist.imageUrl}
+              src={artist.imageUrl}
+            />
+          ) : null
+        )}
         <SectionTitle>ARTISTS</SectionTitle>
         <ButtonCloud>
           {artists.map((artist, index, array) => (

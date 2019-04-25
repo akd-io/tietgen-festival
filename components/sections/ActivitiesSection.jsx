@@ -88,13 +88,15 @@ export default props => {
         color={colors.yellow}
         backgroundColor={colors.pink}
       >
-        {activities.map((activity, index, array) => (
-          <img
-            className={selectedActivity == index ? 'visible' : ''}
-            key={activity.imageUrl}
-            src={activity.imageUrl}
-          />
-        ))}
+        {activities.map((activity, index, array) =>
+          activity.name && activity.description && activity.imageUrl ? (
+            <img
+              className={selectedActivity == index ? 'visible' : ''}
+              key={activity.imageUrl}
+              src={activity.imageUrl}
+            />
+          ) : null
+        )}
         <SectionTitle>ACTIVITIES</SectionTitle>
         <ButtonCloud>
           {activities.map((activity, index, array) => (
