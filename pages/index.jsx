@@ -8,6 +8,7 @@ import AboutSection from '../components/sections/AboutSection';
 import TicketsSection from '../components/sections/TicketsSection';
 import FooterSection from '../components/sections/FooterSection';
 import Modal from '../components/Modal';
+import ProgramSection from '../components/sections/ProgramSection';
 
 export default () => {
   const [modalData, setModalData] = useState(null);
@@ -45,7 +46,9 @@ export default () => {
       </Head>
 
       <Menu />
+
       <BannerSection />
+      <ProgramSection />
       <ArtistsSection updateModalData={updateModalData} />
       <ActivitiesSection />
       <AboutSection />

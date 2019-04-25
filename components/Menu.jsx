@@ -3,6 +3,10 @@ import MenuDropdown from './MenuDropdown';
 
 const links = [
   {
+    text: 'program',
+    sectionID: 'program-section',
+  },
+  {
     text: 'artists',
     sectionID: 'artists-section',
   },
@@ -105,7 +109,7 @@ export default () => {
           flex-direction: row;
           align-items: center;
         }
-        @media screen and (min-width: 600px) {
+        @media screen and (min-width: 800px) {
           .menu-links-container {
             display: flex;
           }
