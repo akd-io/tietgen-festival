@@ -103,7 +103,6 @@ export default props => {
           padding: 20px;
           display: flex;
           flex-direction: column;
-          align-items: center;
           font-size: calc(1em + 0.3vw);
         }
         @media screen and (min-width: 600px) {
@@ -112,6 +111,7 @@ export default props => {
           }
         }
         .content h1 {
+          width: 100%;
           font-size: 2em;
           text-align: center;
         }
