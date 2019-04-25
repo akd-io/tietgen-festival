@@ -3,16 +3,16 @@ import MenuDropdown from './MenuDropdown';
 
 const links = [
   {
-    text: 'program',
-    sectionID: 'program-section',
-  },
-  {
     text: 'artists',
     sectionID: 'artists-section',
   },
   {
     text: 'activities',
     sectionID: 'activities-section',
+  },
+  {
+    text: 'program',
+    sectionID: 'program-section',
   },
   {
     text: 'about',
