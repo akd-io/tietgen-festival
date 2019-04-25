@@ -48,9 +48,9 @@ export default () => {
       <Menu />
 
       <BannerSection />
-      <ProgramSection />
       <ArtistsSection updateModalData={updateModalData} />
       <ActivitiesSection />
+      <ProgramSection />
       <AboutSection />
       <TicketsSection />
       <FooterSection />
