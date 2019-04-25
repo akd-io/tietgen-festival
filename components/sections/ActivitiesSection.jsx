@@ -111,7 +111,7 @@ export default props => {
           </p>
         </>
       ),
-      imageUrl: null,
+      imageUrl: '/static/activities/StudentRevues.png',
     },
     {
       name: 'GIN & TONIC YOGA',
