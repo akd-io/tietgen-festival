@@ -15,7 +15,7 @@ export default props => {
           <p>Asdf.</p>
         </>
       ),
-      imageUrl: '/static/activities/Club60.jpg',
+      imageUrl: '/static/activities/Club60.jpeg',
     },
     {
       name: 'TIETGEN RACE',
@@ -25,7 +25,7 @@ export default props => {
           <p>Asdf.</p>
         </>
       ),
-      imageUrl: '/static/activities/TietgenRace.jpg',
+      imageUrl: '/static/activities/TietgenRace.jpeg',
     },
     {
       name: 'SCIENCE SLAM',
@@ -35,7 +35,7 @@ export default props => {
           <p>Asdf.</p>
         </>
       ),
-      imageUrl: '/static/activities/ScienceSlam.jpg',
+      imageUrl: '/static/activities/ScienceSlam.jpeg',
     },
     {
       name: 'BINGO',
@@ -45,7 +45,7 @@ export default props => {
           <p>Asdf.</p>
         </>
       ),
-      imageUrl: '/static/activities/Bingo.jpg',
+      imageUrl: '/static/activities/Bingo.png',
     },
     {
       name: 'STUDENT REVUES',
@@ -65,7 +65,7 @@ export default props => {
           <p>Asdf.</p>
         </>
       ),
-      imageUrl: '/static/activities/GinTonicYoga.jpg',
+      imageUrl: '/static/activities/GinTonicYoga.jpeg',
     },
   ];
   const [selectedActivity, setSelectedActivity] = useState(null);
