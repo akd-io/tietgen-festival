@@ -126,6 +126,38 @@ export default props => {
       ),
       imageUrl: '/static/activities/GinTonicYoga.jpeg',
     },
+    {
+      name: 'SILENT DISCO',
+      description: (
+        <p>
+          Come and dance your socks off when we once more present SILENT DISCO
+          💥💥 This year will be crazier than ever, when we in collaboration
+          with RedBull turn the party hall into a FULL MOON party, with all the
+          UV paint your heart desires!
+        </p>
+      ),
+      imageUrl: '/static/activities/SilentDisco.png',
+    },
+    {
+      name: 'K-POP POP-UP-BAR',
+      description: (
+        <>
+          <p>안녕하세요, K-POP 좋아하요?</p>
+          <p>
+            Have you ever taken rows of soju shots and danced to loud korean pop
+            music in an elevator? No? Well your time has come. Tietgen’s
+            resident k-pop stan Signe Lilja is hosting, DJ-ing and bartendering
+            in the first and only pop-up bar held in an in one of the building’s
+            elevators. She will be serving Korea’s no. 1 spirit soju (소주)
+            mixed with beer into the korean classic drink somaek (소맥) and
+            korean snacks (No-one ever drank soju without eating ramen) all
+            while the crispiest tunes of the best k-pop music of all time will
+            be bang-bang-banging out the speakers.
+          </p>
+        </>
+      ),
+      imageUrl: '/static/activities/KPopPopUpBar.jpeg',
+    },
   ];
   const [selectedActivity, setSelectedActivity] = useState(null);
 
