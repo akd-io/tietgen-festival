@@ -99,7 +99,7 @@ const activities = [
     imageUrl: '/static/activities/Bingo.png',
   },
   {
-    name: 'STUDENT REVUES',
+    name: 'STATSKUNDSKABSREVYEN',
     description: (
       <>
         <p>
