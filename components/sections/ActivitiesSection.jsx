@@ -16,17 +16,13 @@ const activities = [
           playing different songs 🍻🍻🍻
         </p>
         <p>
-          Have you ever taken rows of soju shots and danced to loud korean pop
-          music in an elevator? No? Well your time has come. Tietgen’s resident
-          k-pop star Signe Lilja is hosting, DJ-ing and bartending in the first
-          and only pop-up bar held in one of the building’s elevators.
-        </p>
-        <p>
-          She will be serving Korea’s no. 1 spirit soju (소주) mixed with beer
-          into the korean classic drink somaek (소맥) and korean snacks (No-one
-          ever drank soju without eating ramen) all while the crispiest tunes of
-          the best k-pop music of all time will be bang-bang-banging out the
-          speakers.
+          The DJ’s comments: "D’Joan is heating up the night with everything
+          that you have wished for and everything you forgot to wish for. In 60
+          minutes we will introduce you to: 60 different lives, 60 emotions, 60
+          dimensions, 60 million, 60 eyebrows, 60 plums, 60 Kay Bojesen monkeys,
+          60 teflon pans, 60 feet, 60 olive oils, 60 evisu-pants, 60 Monet
+          paintings, 60 time zones, 60 mood rings, 60 commercial banks, 60
+          religions, 60 different boogers and 60.000 beers"
         </p>
       </>
     ),
