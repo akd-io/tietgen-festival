@@ -30,7 +30,7 @@ export default props => {
           user-select: none;
           transition: opacity 0.1s ease, transform 0.1s ease;
         }
-        @media screen and (min-width: 600px) {
+        @media screen and (min-width: 800px) {
           .menu-dropdown {
             display: none;
           }
@@ -38,7 +38,7 @@ export default props => {
         .menu-dropdown a {
           box-sizing: border-box;
           width: 100%;
-          padding: 1.5em;
+          padding: 1em;
           text-transform: uppercase;
           text-align: center;
           cursor: pointer;
