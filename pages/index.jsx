@@ -48,12 +48,8 @@ export default () => {
       <Menu />
 
       <BannerSection />
-      <ArtistsSection updateModalData={updateModalData} />
-      <ActivitiesSection updateModalData={updateModalData} />
-      <ProgramSection />
       <AboutSection />
       <TicketsSection />
-      <FooterSection />
 
       <Modal
         visible={modalVisible}

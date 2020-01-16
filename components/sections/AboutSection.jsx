@@ -11,20 +11,16 @@ export default () => (
   >
     <SectionTitle>ABOUT TIETGEN FESTIVAL</SectionTitle>
     <p>
-      The Tietgen Festival is the annual festival at the Tietgen Residence Hall!
-      The dorm houses 390 students from different educational backgrounds. Once
-      a year in May, all friends and neighbors of the dorm are invited into the
-      circle to experience the Tietgen Spirit. The ambition is to create a
-      festival where friends and neighbors can come and enjoy the dorm and its
-      unique possibility for cultural mediation.
+   Tietgen Festival is the annual festival at the Tietgen Residence Hall! The dorm houses 390 students
+   from different educational backgrounds and nationalities. Once a year in May, all friends and
+   neighbors of the dorm are invited into the circle to experience the Tietgen Spirit. The ambition
+   is to create a festival where friends and neighbors can enjoy the dorm and its unique possibility for cultural mediation.
     </p>
     <p>
-      The festival distinguishes itself from other festivals by being not just
-      another party, but by being a festival which promotes curiosity, learning
-      and cultural experiences alongside the great party! The festival is
-      non-profit and is entirely run by volunteers from the dorm. All residents
-      are invited to pitch in and help shape the festival from the festival
-      vision.
+      The festival distinguishes itself from other festivals by being not just another party, but by
+      being a festival which promotes curiosity, learning and cultural experiences alongside the
+      great party! The festival is non-profit and is entirely run by volunteers from the dorm.
+      All residents are invited to pitch in and help shape the festival from the festival vision.
     </p>
     <p>
       <i>

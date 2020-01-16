@@ -12,43 +12,43 @@ export default () => (
     >
       <SectionTitle>Tickets this year</SectionTitle>
       <p>
-        Tietgen Festival is returning on the 3rd and 4th of May this year! Mark
-        the dates in your calendar - It is going to be a blast.
+      Tietgen Festival is returning on the 8th and 9th of May 2020! Mark the dates in your calendar!
       </p>
       <p>
-        Stay tuned on this website for more updates about the festival, and see
-        below for ticket information.
+      Stay tuned on this website for more updates about the festival, and see below for ticket information.
       </p>
       <p>
         Contact{' '}
         <a className="link" href="mailto:billet@tietgenfestival.dk">
           billet@tietgenfestival.dk
         </a>{' '}
-        for questions about tickets.
+        for questions about tickets, and {' '}
+        <a className="link" href="mailto:info@tietgenfestival.dk">
+          info@tietgenfestival.dk
+        </a>{' '} for general inquiries 
       </p>
       <h2>Tickets for friends and neighbors</h2>
       <p>
-        All friends of residents and neighbors of the Tietgen Residence Hall can
-        purchase tickets for Tietgen Festival through the residents of the dorm,
-        who will all receive a login for the general ticket sale in their
-        mailboxes.
+      All friends of residents and neighbors of the Tietgen Residence Hall can purchase
+      tickets for Tietgen Festival through the residents of the dorm, who will all receive
+      a login for the general ticket sale in their mailboxes.
+
       </p>
       <p>
-        The general ticket sale takes place between March 1st at 10:00 and April
-        1st at 23:59. Prices are 145 DKK for one-day tickets, and 195 DKK for
-        two-day tickets.
+      The general ticket sale takes place between March 1st at 10:00 and May 7th at 23:59.
+      Prices are <b>145 DKK</b> (+10,- ticket fee) for one-day tickets, <br />
+      and <b>215 DKK</b> (+10,- ticket fee) for two-day tickets.
       </p>
       <p>
-        Tickets are purchased with the login all residents have received in
-        their mailbox. All residents can buy up to 10 tickets for their friends.
-        However, be aware that tickets can get sold out, and residents are
-        therefore not guaranteed 10 tickets.
+      Tickets are purchased with the login all residents have received in their mailbox.
+      There is no limit on the number of tickets a resident can buy, but be aware that tickets
+       can sell out, and residents are therefore not guaranteed tickets. <b>Last year 2-day tickets sold out within 60 hours!</b>
       </p>
       <p>
         Ask your friend at the Tietgen Residence Hall to buy a ticket for you,
         or ask them for their login so you can do it yourself.
       </p>
-      <p>Tickets are delivered to the email listed when you buy the tickets.</p>
+      <p>Tickets will be delivered to the email listed when you buy the tickets.</p>
       <p>
         Neighbors can contact{' '}
         <a href="mailto:billet@tietgenfestival.dk">billet@tietgenfestival.dk</a>{' '}
@@ -105,8 +105,8 @@ export default () => (
         text-align: center;
       }
       h2 {
-        font-size: calc(1.4em + 1.4vw);
-        margin-top: 2.5em;
+        font-size: calc(1.8em + 1.4vw);
+        margin-top: 1.2em;
         margin-bottom: 1em;
         text-align: center;
       }

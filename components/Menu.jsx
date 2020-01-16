@@ -3,18 +3,6 @@ import MenuDropdown from './MenuDropdown';
 
 const links = [
   {
-    text: 'artists',
-    sectionID: 'artists-section',
-  },
-  {
-    text: 'activities',
-    sectionID: 'activities-section',
-  },
-  {
-    text: 'program',
-    sectionID: 'program-section',
-  },
-  {
     text: 'about',
     sectionID: 'about-section',
   },
