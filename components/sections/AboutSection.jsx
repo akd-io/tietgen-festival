@@ -27,7 +27,7 @@ export default () => (
         “The Annual Tietgen Festival strives to engage residents to come
         together in order to invite surrounding neighbors and fellow peers to
         demystify Tietgen, promote cultural curiosity and celebrate the Tietgen
-        spirit.
+        spirit.“
       </i>
     </p>
     <style jsx>{`
