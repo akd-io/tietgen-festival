@@ -7,9 +7,6 @@ export default props => (
         text-transform: uppercase;
         text-align: center;
         z-index: 1;
-        background: linear-gradient(to right,#FF008C, #FFE600);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
       }
     `}</style>
   </>

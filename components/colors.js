@@ -10,6 +10,8 @@ export default {
   gray: "#C6C6C6",
   blue: "#0012FF",
   purple: "#D900EA",
+  gradientleftright: "linear-gradient(to right,#FF008C, #FFE600)",
+  gradientdown: "linear-gradient(#FF008C, #FFE600)",
   black: "#000000",
   white: "#FFFFFF"
 };

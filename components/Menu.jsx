@@ -70,7 +70,7 @@ export default () => {
         }
         .menu {
           position: fixed;
-          background: white;
+          background-image: linear-gradient(to right,#FF008C, #FFE600);
           box-sizing: border-box;
           height: 80px;
           left: 0;
@@ -91,6 +91,7 @@ export default () => {
           padding-left: 1em;
           padding-right: 1em;
           cursor: pointer;
+          color: white;
         }
         .menu-links-container {
           display: none;

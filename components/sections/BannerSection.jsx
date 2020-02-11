@@ -86,8 +86,8 @@ export default () => (
         padding-bottom: 0.7em;
         font-family: 'TypoPRO Bebas Neue', 'Roboto', sans-serif;
         font-size: 1.5em;
-        color: ${colors.yellow};
-        background-color: ${colors.pink};
+        color: white;
+        background-image: linear-gradient(#FF008C, #FFE600);
         border: none;
         border-radius: 0.5em;
       }

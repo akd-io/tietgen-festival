@@ -7,8 +7,8 @@ export default () => (
     <Section
       id="tickets-section"
       minHeight="100vh"
-      color={colors.pink}
-      backgroundColor={colors.yellow}
+      color={colors.black}
+      backgroundColor={colors.white}
     >
       <SectionTitle>Tickets this year</SectionTitle>
       <p>
@@ -79,10 +79,29 @@ export default () => (
       <br />
       <br />
       <br />
+      
       <p className="disclaimer">
         Tietgen Festival is for residents of the dorm, friends of residents and
         neighbors.
       </p>
+      <p className="legal">
+      Special terms and conditions for Tietgen Festival
+      </p>
+      <p className="legal">Tietgen Festival requires all attendants to be above the age of 18 after 16:00 every day and reserves the right to refuse entrance for anyone under the age of 18.
+      </p>
+      <p className="legal">Tietgen Festival has a zero-tolerance policy towards any kind of illegal drugs.
+      </p>
+      <p className="legal">Tietgen Festival reserves the right to refuse entrance to customers if they are evaluated as threatening for their own or others' safety by our professional security staff.
+      </p>
+      <p className="legal">Tietgen Festival does not allow attendants to bring their own alcoholic beverages to the festival site and reserves the right to confiscate alcoholic products.
+      </p>
+      <p className="legal">Tietgen Festival makes use of strobe lights and other powerful stage lighting.
+      </p>
+      <p className="legal">Tietgen Festival reserves the right to use pictures of guests who have purchased a ticket if they are taken by official Tietgen Festival photographers.
+      </p>
+
+
+
     </Section>
     <style jsx>{`
       .ticket-button {
@@ -91,8 +110,8 @@ export default () => (
         padding-bottom: 0.7em;
         font-family: 'TypoPRO Bebas Neue', 'Roboto', sans-serif;
         font-size: 2em;
-        color: ${colors.yellow};
-        background-color: ${colors.pink};
+        color: ${colors.white};
+        background-image: ${colors.gradientdown} !important;
         border: none;
         border-radius: 0.5em;
       }
@@ -109,6 +128,9 @@ export default () => (
         margin-top: 1.2em;
         margin-bottom: 1em;
         text-align: center;
+        background: linear-gradient(to right,#FF008C, #FFE600);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
       .logo-container {
         display: flex;
@@ -121,8 +143,18 @@ export default () => (
       .fa:active {
         font-size: 3rem;
         margin: 0.3rem;
+        background: linear-gradient(#FF008C, #FFE600);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
       .disclaimer {
+        padding-top: 0.9em;
+        opacity: 0.5;
+        font-style: italic;
+        padding-bottom: 4em;
+      }
+      .legal {
+        font-size: calc(0.2em + 0.5vw);
         opacity: 0.5;
         font-style: italic;
       }

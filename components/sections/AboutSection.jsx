@@ -1,15 +1,15 @@
 import Section from './Section';
-import SectionTitle from './SectionTitle';
+import SectionTitleWhite from './SectionTitleWhite';
 import colors from '../colors';
 
 export default () => (
   <Section
     id="about-section"
     minHeight="100vh"
-    color={colors.yellow}
-    backgroundColor={colors.pink}
+    color={colors.white}
+    backgroundColor={colors.gradientdown}
   >
-    <SectionTitle>ABOUT TIETGEN FESTIVAL</SectionTitle>
+    <SectionTitleWhite>ABOUT TIETGEN FESTIVAL</SectionTitleWhite>
     <p>
    Tietgen Festival is the annual festival at the Tietgen Residence Hall! The dorm houses 390 students
    from different educational backgrounds and nationalities. Once a year in May, all friends and
@@ -24,10 +24,12 @@ export default () => (
     </p>
     <p>
       <i>
+        <b>
         “The Annual Tietgen Festival strives to engage residents to come
         together in order to invite surrounding neighbors and fellow peers to
         demystify Tietgen, promote cultural curiosity and celebrate the Tietgen
         spirit.“
+        </b>
       </i>
     </p>
     <style jsx>{`
