@@ -46,7 +46,7 @@ export default () => (
         object-fit: cover;
       }
       video {
-        display: none;
+        display: block;
       }
       @media screen and (min-width: 800px) {
         video {
