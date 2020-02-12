@@ -12,6 +12,7 @@ export default {
   purple: "#D900EA",
   gradientleftright: "linear-gradient(to right,#FF008C, #FFE600)",
   gradientdown: "linear-gradient(#FF008C, #FFE600)",
+  gradientdownwithwhite: "linear-gradient(#FFE600, white 5%)",
   black: "#000000",
   white: "#FFFFFF"
 };

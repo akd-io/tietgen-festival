@@ -8,7 +8,7 @@ export default () => (
       id="tickets-section"
       minHeight="100vh"
       color={colors.black}
-      backgroundColor={colors.white}
+      backgroundColor={colors.gradientdownwithwhite}
     >
       <SectionTitle>Tickets this year</SectionTitle>
       <p>
