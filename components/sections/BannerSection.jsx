@@ -24,7 +24,7 @@ export default () => (
         <img className="logo" src="static/logo.png" />
         <div className="title-container">
           <h2 className="title">
-            8<sup>TH</sup> - 9<sup>TH</sup> MAY 2020
+            4<sup>TH</sup> - 5<sup>TH</sup> SEPTEMBER 2020
           </h2>
           <h2 className="title">Tietgenkollegiet</h2>
         </div>

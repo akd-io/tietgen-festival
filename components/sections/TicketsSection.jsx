@@ -12,7 +12,7 @@ export default () => (
     >
       <SectionTitle>Tickets this year</SectionTitle>
       <p>
-      Tietgen Festival is returning on the 8th and 9th of May 2020! Mark the dates in your calendar!
+      Tietgen Festival is returning on the 4th and 5th of September 2020! Mark the dates in your calendar!
       </p>
       <p>
       Stay tuned on this website for more updates about the festival, and see below for ticket information.
@@ -35,7 +35,7 @@ export default () => (
 
       </p>
       <p>
-      The general ticket sale takes place between March 1st at 10:00 and May 7th at 23:59.
+      The general ticket sale takes place between March 1st at 10:00 and September 3rd at 23:59.
       Prices are <b>145 DKK</b> (+10,- ticket fee) for one-day tickets, <br />
       and <b>215 DKK</b> (+10,- ticket fee) for two-day tickets.
       </p>

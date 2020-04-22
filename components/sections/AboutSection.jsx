@@ -12,7 +12,7 @@ export default () => (
     <SectionTitleWhite>ABOUT TIETGEN FESTIVAL</SectionTitleWhite>
     <p>
    Tietgen Festival is the annual festival at the Tietgen Residence Hall! The dorm houses 390 students
-   from different educational backgrounds and nationalities. Once a year in May, all friends and
+   from different educational backgrounds and nationalities. Once a year, all friends and
    neighbors of the dorm are invited into the circle to experience the Tietgen Spirit. The ambition
    is to create a festival where friends and neighbors can enjoy the dorm and its unique possibility for cultural mediation.
     </p>
