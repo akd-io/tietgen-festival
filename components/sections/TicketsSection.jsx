@@ -59,7 +59,7 @@ export default () => (
       <br />
       <br />
       <a
-        className="ticket-button"
+        className="ticket-button button-hover"
         href="https://ticket.livebackend.com/tietgen-festival/api/heyticket/v1/member"
       >
         Buy tickets
@@ -69,10 +69,10 @@ export default () => (
       <br />
       <div className="logo-container">
         <a href="https://www.facebook.com/TietgenFestival/">
-          <i className="fa fa-facebook-square" />
+          <i className="fa fa-facebook-square button-hover" />
         </a>
         <a href="https://www.instagram.com/Tietgen_Festival/">
-          <i className="fa fa-instagram" />
+          <i className="fa fa-instagram button-hover" />
         </a>
       </div>
       <br />
@@ -115,6 +115,17 @@ export default () => (
         border: none;
         border-radius: 0.5em;
       }
+
+      .button-hover {
+        position: relative;
+        top: 0;
+        transition: top ease 200ms;
+      }
+
+      .button-hover:hover {
+        top: -3px;
+      }
+
       p {
         margin-top: 0em;
         margin-bottom: 1em;
