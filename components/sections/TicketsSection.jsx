@@ -15,7 +15,7 @@ export default () => (
         Tietgen Festival is returning on the 3rd and 4th of September 2021! Mark the dates in your calendar!
       </p>
       <p>
-      Stay tuned on this website for more updates about the festival, and see below for ticket information.
+        Stay tuned on this website for more updates about the festival, and see below for ticket information.
       </p>
       <p>
         Contact{' '}
@@ -25,23 +25,23 @@ export default () => (
         for questions about tickets, and {' '}
         <a className="link" href="mailto:info@tietgenfestival.dk">
           info@tietgenfestival.dk
-        </a>{' '} for general inquiries 
+        </a>{' '} for general inquiries
       </p>
       <h2>Tickets for friends and neighbors</h2>
       <p>
-      All friends of residents and neighbors of the Tietgen Residence Hall can purchase
-      tickets for Tietgen Festival through the residents of the dorm, who will all receive
-      a login for the general ticket sale in their mailboxes.
+        All friends of residents and neighbors of the Tietgen Residence Hall can purchase
+        tickets for Tietgen Festival through the residents of the dorm, who will all receive
+        a login for the general ticket sale in their mailboxes.
 
       </p>
       <p>
-      The general ticket sale takes place between March 1st at 10:00 and September 3rd at 23:59.
+        The general ticket sale takes place between March 1st at 10:00 and September 3rd at 23:59.
       Prices are <b>145 DKK</b> (+10,- ticket fee) for one-day tickets, <br />
       and <b>215 DKK</b> (+10,- ticket fee) for two-day tickets.
       </p>
       <p>
-      Tickets are purchased with the login all residents have received in their mailbox.
-      There is no limit on the number of tickets a resident can buy, but be aware that tickets
+        Tickets are purchased with the login all residents have received in their mailbox.
+        There is no limit on the number of tickets a resident can buy, but be aware that tickets
        can sell out, and residents are therefore not guaranteed tickets. <b>Last year 2-day tickets sold out within 60 hours!</b>
       </p>
       <p>
@@ -79,13 +79,13 @@ export default () => (
       <br />
       <br />
       <br />
-      
+
       <p className="disclaimer">
         Tietgen Festival is for residents of the dorm, friends of residents and
         neighbors.
       </p>
       <p className="legal">
-      Special terms and conditions for Tietgen Festival
+        Special terms and conditions for Tietgen Festival
       </p>
       <p className="legal">Tietgen Festival requires all attendants to be above the age of 18 after 16:00 every day and reserves the right to refuse entrance for anyone under the age of 18.
       </p>
