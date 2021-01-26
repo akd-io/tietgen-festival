@@ -25,7 +25,7 @@ export default props => {
           display: flex;
           flex-direction: column;
           background-color: white;
-          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
           font-family: 'TypoPRO Bebas Neue', sans-serif;
           user-select: none;
           transition: opacity 0.1s ease, transform 0.1s ease;

@@ -66,7 +66,7 @@ export default props => {
           display: flex;
           flex-direction: column;
           align-items: center;
-          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
           background-color: ${colors.lightblue};
           color: ${colors.pink};
         }

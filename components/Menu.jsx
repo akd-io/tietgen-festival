@@ -80,7 +80,7 @@ export default () => {
           flex-direction: row;
           justify-content: space-between;
           align-items: center;
-          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
           font-family: 'TypoPRO Bebas Neue', sans-serif;
           font-weight: bold;
           user-select: none;
