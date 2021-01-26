@@ -29,12 +29,6 @@ export default () => (
           <h2 className="title">Tietgenkollegiet</h2>
         </div>
       </div>
-      <a
-        className="ticket-button"
-        href="https://ticket.livebackend.com/tietgen-festival/api/heyticket/v1/member"
-      >
-        Buy tickets
-      </a>
     </Section>
     <style jsx>{`
       video,
