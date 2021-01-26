@@ -12,7 +12,7 @@ export default () => (
     >
       <SectionTitle>Tickets this year</SectionTitle>
       <p>
-      Tietgen Festival is returning on the 4th and 5th of September 2020! Mark the dates in your calendar!
+        Tietgen Festival is returning on the 3rd and 4th of September 2021! Mark the dates in your calendar!
       </p>
       <p>
       Stay tuned on this website for more updates about the festival, and see below for ticket information.
