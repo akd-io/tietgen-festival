@@ -111,7 +111,7 @@ export default () => {
           cursor: pointer;
           text-transform: uppercase;
           font-size: 1.5em;
-          color: black;
+          color: #1f1f1f;
           padding-left: 1em;
           padding-right: 1em;
           text-align: center;

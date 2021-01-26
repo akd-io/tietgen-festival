@@ -6,7 +6,7 @@ export default () => (
   <Section
     id="policy-section"
     minHeight="100vh"
-    color={colors.black}
+    color={colors.dark}
     backgroundColor={colors.lightpink}
   >
     <SectionTitle>Privacy Policy</SectionTitle>

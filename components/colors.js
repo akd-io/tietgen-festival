@@ -13,6 +13,6 @@ export default {
   gradientleftright: "linear-gradient(to right,#FF008C, #FFE600)",
   gradientdown: "linear-gradient(#FF008C, #FFE600)",
   gradientdownwithwhite: "linear-gradient(#FFE600, white 5%)",
-  black: "#000000",
+  dark: "#1f1f1f",
   white: "#FFFFFF"
 };

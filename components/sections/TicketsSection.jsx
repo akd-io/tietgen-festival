@@ -7,7 +7,7 @@ export default () => (
     <Section
       id="tickets-section"
       minHeight="100vh"
-      color={colors.black}
+      color={colors.dark}
       backgroundColor={colors.gradientdownwithwhite}
     >
       <SectionTitle>Tickets this year</SectionTitle>
